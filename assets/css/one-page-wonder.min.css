@@ -1,0 +1,378 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(5rem + 60px);
+  background-image: url("../img/Home\ Gradient.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-color: #e8f4ff;
+  background-size: cover;
+}
+.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+.ban_head {
+  font-size: 54px;
+  font-weight: 600px;
+  line-height: 1.2;
+  text-align: center;
+}
+.ban_para {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  padding: 1% 10%;
+}
+.ban_btn {
+  margin-bottom: 2%;
+}
+.masthead .bg-circle_1 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/virusb1.svg");
+  background-repeat: no-repeat;
+}
+.masthead .bg-circle_2 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/Virusb2.svg");
+  background-repeat: no-repeat;
+}
+.masthead .bg-circle_3 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/virusb3.svg");
+  background-repeat: no-repeat;
+}
+
+.masthead .bg-circle-1 {
+  bottom: 1%;
+  left: 1%;
+  top: 30%;
+}
+.masthead .bg-circle-2 {
+  left: 70%;
+  top: 10%;
+  right: 20%;
+  bottom: 50%;
+}
+.masthead .bg-circle-3 {
+  bottom: 10%;
+  right: 2%;
+  left: 80%;
+  top: 50%;
+}
+
+.masthead {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header_bg {
+  padding: 1rem 0;
+}
+
+.main_bg {
+  background-color: #e8f4ff;
+  padding-bottom: 10%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.main_bg .main_bg_content {
+  z-index: 1;
+  position: relative;
+}
+.main_bg .main_bg_cir_11 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/virusb4.svg");
+  background-repeat: no-repeat;
+}
+.main_bg .main_bg_cir_12 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/virusb5.svg");
+  background-repeat: no-repeat;
+}
+
+.main_bg .main_bg_cir_21 {
+  left: 85%;
+  top: -4%;
+  bottom: 0%;
+  right: 0%;
+}
+.main_bg .main_bg_cir_22 {
+  left: -2%;
+  top: 15%;
+  right: 30%;
+  bottom: 0%;
+}
+.main_bg .main_bg_cir_23 {
+  left: 80%;
+  top: 33%;
+  bottom: 0%;
+  right: 0%;
+}
+.main_bg .main_bg_cir_24 {
+  left: 0%;
+  top: 45%;
+  right: 30%;
+  bottom: 0%;
+}
+.cont_head {
+  line-height: 1;
+  color: #187dd7;
+  font-size: 32px;
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.cont_head_1 {
+  line-height: 1;
+  color: #187dd7;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 70px;
+}
+
+.cont_head_2 {
+  line-height: 1;
+  color: #187dd7;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+.cont_par {
+  margin-bottom: 0rem;
+  color: #2c2d32;
+  text-align: left;
+  line-height: 1.8;
+  text-align: left;
+  font-size: 18px;
+}
+
+.cont_par_1 {
+  margin-bottom: 0rem;
+  color: #2c2d32;
+
+  line-height: 1.8;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.cont_par_2 {
+  margin-bottom: 0rem;
+  color: #187dd7;
+  text-align: left;
+  line-height: 1.8;
+  padding-top: 50px;
+
+  font-size: 18px;
+}
+
+.sec_pad {
+  padding-top: 10%;
+}
+
+.sec_img_cen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.image_bg {
+  width: 100%;
+  overflow: hidden;
+  background: url(../img/BG_1.svg) no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.image_bg .image_bg_content {
+  z-index: 1;
+  position: relative;
+}
+.image_bg .image_bg_cir_11 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/Virus_2.svg");
+  background-repeat: no-repeat;
+}
+.image_bg .image_bg_cir_12 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/Virus_2_1.svg");
+  background-repeat: no-repeat;
+}
+
+.image_bg .image_bg_cir_21 {
+  left: 30%;
+  top: 20%;
+  bottom: 0%;
+  right: 0%;
+}
+.image_bg .image_bg_cir_22 {
+  left: 88%;
+  top: 42%;
+  right: 30%;
+  bottom: 0%;
+}
+
+.box_1 {
+  border: 0px solid #187dd7;
+  border-radius: 0px 50px 0px 0px;
+  background-color: #187dd7;
+}
+
+.box_head_1 {
+  line-height: 1.3;
+  color: #fff;
+  font-size: 32px;
+  text-align: left;
+  font-weight: bold;
+}
+.box_btn_1 {
+  border-radius: 0px;
+  padding: 12px 0;
+  background-color: #fff;
+  color: #187dd7;
+  text-align: center;
+  font-size: 18px;
+  border: 0;
+}
+.box_ico {
+  font-size: 25px;
+  padding-left: 5px;
+}
+.box_pad {
+  padding: 2.5rem;
+}
+
+.box_img_1 {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  height: 80px;
+}
+
+.box_2 {
+  border: 0px solid #fff;
+  border-radius: 0px 50px 0px 0px;
+  background-color: #fff;
+}
+
+.box_head_2 {
+  line-height: 1.3;
+  color: #187dd7;
+  font-size: 32px;
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.box_btn_2 {
+  border-radius: 0px;
+  padding: 12px 0;
+  background-color: #187dd7;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  border: 0;
+}
+
+.box_btn_2:hover {
+  background-color: #fff;
+  color: #187dd7;
+}
+.box_pad_2 {
+  padding: 25px;
+}
+
+.box_img_2 {
+  padding: 10px;
+  background-color: #187dd7;
+  border-radius: 50%;
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 80px;
+}
+.cont_list ul {
+  list-style: none;
+}
+
+.cont_list ul li {
+  margin-bottom: 0rem;
+  color: #2c2d32;
+  text-align: left;
+  line-height: 1.8;
+
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.cont_list ul li::before {
+  content: "\2022";
+  color: #187dd7;
+  font-weight: bold;
+  font-size: 40px;
+  display: inline-block;
+  width: 0.8em;
+  vertical-align: middle;
+  line-height: 20px;
+  margin-left: -1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobi_pad {
+    margin-bottom: 50px;
+  }
+
+  .sec_pad {
+    padding-top: 100px;
+  }
+
+  .cont_head_2 {
+    padding-top: 60px;
+  }
+}
