@@ -9,11 +9,19 @@ h5,
 h6 {
   font-family: "Nunito", sans-serif;
 }
-
+.img_logo {
+  width: 300px;
+}
+.bg-light {
+  background-color: #ffffff !important;
+}
+.navbar {
+  padding: 0;
+}
 .masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(5rem + 60px);
+  padding-top: calc(3rem + 20px);
   background-image: url("../img/Home\ Gradient.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -87,7 +95,7 @@ h6 {
 }
 
 .header_bg {
-  padding: 1rem 0;
+  padding: 10px 0;
 }
 
 .main_bg {
@@ -146,7 +154,7 @@ h6 {
   bottom: 0%;
 }
 .cont_head {
-  line-height: 1;
+  line-height: 1.5;
   color: #187dd7;
   font-size: 32px;
   text-align: left;
@@ -372,7 +380,18 @@ h6 {
     padding-top: 100px;
   }
 
+  .ban_head {
+    font-size: 42px;
+    font-weight: 600px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
   .cont_head_2 {
     padding-top: 60px;
   }
+}
+.ban_mg_padd {
+  bottom: -2px;
+  position: relative;
 }
