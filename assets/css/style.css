@@ -422,13 +422,15 @@ h6 {
   align-items:center
 }
 .icon-container-block1b{
-  display:inline-flex
+  display:flex;
+ justify-content: center;
 }
 .block1b-text-container{
   display:flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+ 
 }
 .block1b-image-container{
   background-image: url('/assets/img/Assets/Door.svg');
@@ -449,13 +451,28 @@ h6 {
 }
 .block1b-button{
   border-radius: 20px;
-  padding: 8px 0;
+  padding: 8px 5px;
   background-color: #187dd7;
   color: #fff;
   text-align: center;
   font-size: 18px;
   border: 1px solid #187dd7;
   width:100%
+}
+.prev-btn{
+  border-radius: 20px;
+  padding: 8px 5px;
+  background-color: #187dd7;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #187dd7;
+  width:100%
+}
+.button-container{
+  display:flex;
+  flex-direction: row;
+  width:300px
 }
 /***********container block1 starts here**********/
 @media only screen and (max-width: 600px) {
