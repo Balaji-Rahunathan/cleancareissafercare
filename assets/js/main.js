@@ -89,7 +89,7 @@ $("#droppable" + slideIndex).droppable({
       "src",
       "assets/img/Airbone_Character/Before/Character_Long Sleeve-03.svg"
     );
-    $('.apron-image-container').css("height","250px");
+    $(".apron-image-container").css("height", "auto");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
   },
@@ -100,7 +100,7 @@ $("#droppable2").droppable({
       "src",
       "assets/img/Airbone_Character/Before/Character_ffp2-03.svg"
     );
-    $('.apron-image-container').css("height","250px");
+    $(".apron-image-container").css("height", "auto");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
   },
@@ -111,7 +111,7 @@ $("#droppable3").droppable({
       "src",
       "assets/img/Airbone_Character/Before/Character_Face shield-03.svg"
     );
-    $('.apron-image-container').css("height","250px");
+    $(".apron-image-container").css("height", "auto");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
   },
@@ -122,7 +122,7 @@ $("#droppable4").droppable({
       "src",
       "assets/img/Airbone_Character/Before/Balaji Precautions-03.svg"
     );
-    $('.apron-image-container').css("height","250px");
+    $(".apron-image-container").css("height", "auto");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
   },

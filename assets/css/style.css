@@ -1,5 +1,13 @@
 body {
   font-family: "Nunito", sans-serif;
+  background-color: #e8f4ff;
+  width: 100%;
+  height: 100%;
+}
+html {
+  background-color: #e8f4ff;
+  width: 100%;
+  height: 100%;
 }
 h1,
 h2,
@@ -375,7 +383,6 @@ h6 {
 .container-block1 {
   padding: 30px 0px;
   background-color: #e8f4ff;
- 
 }
 .block1 {
   display: flex;
@@ -391,6 +398,8 @@ h6 {
 .block1 h3 {
   color: #187dd7;
   text-align: center;
+  font-size: 40px;
+  font-weight: 600;
 }
 .apron-image-container {
   background-color: #ffffff;
@@ -398,8 +407,15 @@ h6 {
   width: 100%;
   height: auto;
   max-width: 260px;
+
   border: 2px dashed #187dd7;
   border-radius: 25px;
+}
+
+.block1b p {
+  font-size: 18;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 .apron {
   width: 100%;
@@ -421,6 +437,11 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
+
+.block1a {
+  margin-top: 7% !important;
+}
+
 .icon-container-block1b {
   display: flex;
   justify-content: center;
@@ -432,7 +453,7 @@ h6 {
   align-items: center;
 }
 .block1b-image-container {
-  background-image: url("/assets/img/Assets/Door.svg");
+  background-image: url("../img/Assets/Door.svg");
   width: 100%;
   height: auto;
   max-width: 250px;
@@ -475,22 +496,22 @@ h6 {
 }
 .P_text_aling {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 0px;
 }
 /***********container block1 starts here**********/
 
 /***************airborne-container starts here *****/
-.airborne-bg{
+.airborne-bg {
   padding: 10px;
-    background-color: #187dd7;
-    border-radius: 50%;
-    width: 100px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 100px;
-    display:flex;
-    justify-content: center;
+  background-color: #187dd7;
+  border-radius: 50%;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 /***************airborne-container ends here *****/
@@ -558,7 +579,7 @@ h6 {
     width: 100%;
   }
   .block1b-image-container {
-    background-image: url("/assets/img/Assets/Door.svg");
+    background-image: url("../img/Assets/Door.svg");
     width: 100%;
     height: 200px;
     max-width: 150px;
@@ -628,4 +649,58 @@ h6 {
 .ban_mg_padd {
   bottom: -2px;
   position: relative;
+}
+
+.masthead_bg {
+  position: relative;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+
+  background-size: cover;
+}
+.masthead_bg .masthead-content_bg {
+  z-index: 1;
+  position: relative;
+}
+
+.masthead_bg .bg-circle-bg1 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/Virus_2.svg");
+  background-repeat: no-repeat;
+}
+.masthead_bg .bg-circle-bg2 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/Virus_2.svg");
+  background-repeat: no-repeat;
+}
+.masthead_bg .bg-circle-bg3 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/Virus_2_1.svg");
+  background-repeat: no-repeat;
+}
+
+.masthead_bg .bg-circle_bc1 {
+  bottom: 1%;
+  left: 20%;
+  top: 20%;
+}
+.masthead_bg .bg-circle_bc2 {
+  left: 85%;
+  top: 10%;
+  right: 20%;
+  bottom: 50%;
+}
+.masthead_bg .bg-circle_bc3 {
+  bottom: 10%;
+  right: 2%;
+  left: 90%;
+  top: 70%;
 }
