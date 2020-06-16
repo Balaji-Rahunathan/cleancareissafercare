@@ -375,8 +375,7 @@ h6 {
 .container-block1 {
   padding: 30px 0px;
   background-color: #e8f4ff;
-  height:100vh;
-  overflow:hidden
+ 
 }
 .block1 {
   display: flex;
