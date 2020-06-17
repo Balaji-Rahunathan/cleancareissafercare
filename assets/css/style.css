@@ -715,10 +715,9 @@ h6 {
   .button-container {
     display: flex;
     flex-direction: row;
-    width: 180px;
+    width: 200px;
     position: absolute;
     bottom: -50%;
-    left: 25%;
   }
   .block1b-image {
     width: 100%;
