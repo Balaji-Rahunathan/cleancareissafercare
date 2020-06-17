@@ -809,7 +809,7 @@ h6 {
 }
 
 .d_g_bg_ico {
-  position: absolute;
+  position: relative;
   left: 0%;
   top: 30%;
   opacity: 0.5;
