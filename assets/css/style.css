@@ -584,7 +584,7 @@ h6 {
 }
 @media only screen and (max-width: 800px) {
   .bg_centre_cc {
-    padding-left: 0%;
+    padding-left: 2%;
   }
   .d_g_bg_ico {
     position: relative;
