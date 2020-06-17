@@ -5,6 +5,22 @@ body {
   height: 100%;
 }
 
+a:link {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
