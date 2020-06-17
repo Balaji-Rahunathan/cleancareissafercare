@@ -4,11 +4,7 @@ body {
   width: 100%;
   height: 100%;
 }
-html {
-  background-color: #e8f4ff;
-  width: 100%;
-  height: 100%;
-}
+
 h1,
 h2,
 h3,
@@ -411,11 +407,13 @@ h6 {
   border: 2px dashed #187dd7;
   border-radius: 25px;
 }
-.box1{
-  height:330px
+.box1 {
+  height: 330px;
 }
-.box2,.box3,.box4{
-  height:210px
+.box2,
+.box3,
+.box4 {
+  height: 210px;
 }
 .block1b p {
   font-size: 18;
@@ -521,7 +519,6 @@ h6 {
 
 /***************airborne-container ends here *****/
 
-
 /****************reverse block starts here***********/
 .block2b-image-container {
   background-image: url("../img/reverse/Sleeve_4.svg");
@@ -547,7 +544,7 @@ h6 {
   justify-content: center;
   margin: 0% 0%;
 }
-.block2a{
+.block2a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -562,19 +559,19 @@ h6 {
   height: auto;
   max-width: 300px;
 }
-.block2b-image{
-  width:100%;
-  height:auto;
-  max-width:80px;
+.block2b-image {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
   position: absolute;
-  top:13%
+  top: 13%;
 }
-.block2c-image{
-  width:100%;
-  height:auto;
-  max-width:80px;
+.block2c-image {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
   position: absolute;
-  top:13%
+  top: 13%;
 }
 .apron1 {
   width: 100%;
@@ -602,10 +599,13 @@ h6 {
   .cont_head_2 {
     padding-top: 60px;
   }
-  .box1,.box2,.box3,.box4{
-    width:100%;
-    height:120px !important;
-    max-width:250px ;
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+    height: 120px !important;
+    max-width: 250px;
   }
   .block1 h3 {
     color: #187dd7;
@@ -731,7 +731,7 @@ h6 {
     margin: 0px 10px 0px 20px;
   }
   .block1b-image-container {
-    background-image: url("/assets/img/Assets/Door.svg");
+    background-image: url("../img/Assets/Door.svg");
     width: 100%;
     height: 150px;
     max-width: 100px;
@@ -806,4 +806,29 @@ h6 {
   right: 2%;
   left: 90%;
   top: 70%;
+}
+
+.d_g_bg_ico {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  opacity: 0.5;
+  width: 100px;
+}
+
+.d_g_bg_ico_2 {
+  position: absolute;
+  right: 0%;
+  opacity: 0.5;
+  top: 10%;
+
+  width: 100px;
+}
+
+.d_g_bg_ico_3 {
+  position: absolute;
+  right: 10%;
+  top: 60%;
+  opacity: 0.5;
+  width: 70px;
 }
