@@ -614,7 +614,7 @@ h6 {
 /****************reverse block ends here***********/
 @media only screen and (max-width: 600px) {
   .block1b-button {
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 4px 5px;
     background-color: #187dd7;
     color: #fff;
