@@ -602,6 +602,17 @@ h6 {
   .cont_head_2 {
     padding-top: 60px;
   }
+  .box1,.box2,.box3,.box4{
+    width:100%;
+    height:120px !important;
+    max-width:250px ;
+  }
+  .block1 h3 {
+    color: #187dd7;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
 }
 @media (max-width: 375px) {
   .block1 h3 {
