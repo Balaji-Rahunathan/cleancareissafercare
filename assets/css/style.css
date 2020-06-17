@@ -715,7 +715,7 @@ h6 {
   .button-container {
     display: flex;
     flex-direction: row;
-    width: 280px;
+    width: 180px;
     position: absolute;
     bottom: -53%;
     left: 25%;
