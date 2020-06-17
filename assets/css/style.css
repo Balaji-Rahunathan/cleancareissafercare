@@ -613,6 +613,9 @@ h6 {
 }
 /****************reverse block ends here***********/
 @media only screen and (max-width: 600px) {
+  .icon-container-block1b img {
+    width: 20px;
+  }
   .block1b-button {
     border-radius: 10px;
     padding: 5px 5px;
