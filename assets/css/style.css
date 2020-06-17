@@ -481,7 +481,6 @@ h6 {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  margin: 0% 30%;
 }
 .block1b-image {
   width: 100%;
@@ -614,6 +613,22 @@ h6 {
 }
 /****************reverse block ends here***********/
 @media only screen and (max-width: 600px) {
+  .P_text_aling {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom: 0px !important;
+  }
+  .block1b p {
+    font-size: 14px !important;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .icon-container-block1b .my-3 {
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
+  }
+
   .container-block1 {
     padding: 15px 0px;
   }
@@ -652,14 +667,22 @@ h6 {
   .block1b-image-container {
     background-image: url("../img/Assets/Door.svg");
     width: 100%;
-    height: 300px !important;
-    max-width: 250px !important;
+    height: 200px !important;
+    max-width: 150px !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     margin: 0% !important;
+  }
+
+  .block1b-image {
+    width: 100%;
+    height: auto;
+    width: 100px !important;
+    position: absolute;
+    top: 0px;
   }
 }
 @media (max-width: 375px) {
