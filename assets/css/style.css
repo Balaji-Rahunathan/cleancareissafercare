@@ -700,6 +700,13 @@ h6 {
   }
 }
 @media (min-width: 377px) and (max-width: 596px) {
+  .d_g_bg_ico {
+    position: relative;
+    left: 0%;
+    top: 30%;
+    opacity: 0.5;
+    width: 100px;
+  }
   .block1a {
     display: flex;
     justify-content: center;
@@ -809,17 +816,17 @@ h6 {
 }
 
 .d_g_bg_ico {
-  position: relative;
+  position: absolute;
   left: 0%;
   top: 30%;
-  opacity: 0.5;
+  opacity: 0.8;
   width: 100px;
 }
 
 .d_g_bg_ico_2 {
   position: absolute;
   right: 0%;
-  opacity: 0.5;
+  opacity: 0.8;
   top: 10%;
 
   width: 100px;
@@ -829,6 +836,6 @@ h6 {
   position: absolute;
   right: 10%;
   top: 60%;
-  opacity: 0.5;
+  opacity: 0.8;
   width: 70px;
 }
