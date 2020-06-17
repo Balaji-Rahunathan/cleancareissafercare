@@ -716,6 +716,8 @@ h6 {
     display: flex;
     flex-direction: row;
     width: 180px;
+    position: absolute;
+    bottom: -65%;
   }
   .block1b-image {
     width: 100%;
