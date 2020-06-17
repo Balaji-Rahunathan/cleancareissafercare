@@ -706,7 +706,7 @@ h6 {
     margin-bottom: 5%;
   }
   .block1a {
-    margin-top: 7% !important;
+    margin-top: 5% !important;
   }
   h5 b,
   strong {
@@ -715,9 +715,10 @@ h6 {
   .button-container {
     display: flex;
     flex-direction: row;
-    width: 200px;
+    width: 280px;
     position: absolute;
-    bottom: -50%;
+    bottom: -53%;
+    left: 25%;
   }
   .block1b-image {
     width: 100%;
