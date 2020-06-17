@@ -706,7 +706,7 @@ h6 {
     margin-bottom: 5%;
   }
   .block1a {
-    margin-top: 1% !important;
+    margin-top: 5% !important;
   }
   h5 b,
   strong {
@@ -717,8 +717,8 @@ h6 {
     flex-direction: row;
     width: 180px;
     position: absolute;
-    bottom: -53%;
-    left: 25%;
+    bottom: -50%;
+    left: 27%;
   }
   .block1b-image {
     width: 100%;
