@@ -613,6 +613,39 @@ h6 {
 }
 /****************reverse block ends here***********/
 @media only screen and (max-width: 600px) {
+  .apron-image-container {
+    background-color: #ffffff;
+    padding: 2%;
+    width: 100%;
+    height: 70px !important;
+    max-width: 70px !important;
+    border: 2px dashed #187dd7;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .apron {
+    height: 60px !important;
+    width: 40px !important;
+  }
+  .drop-img {
+    width: 100%;
+    height: auto;
+    width: 50px;
+  }
+  .drop-img_1 {
+    width: 40px;
+  }
+  .airborne-bg {
+    padding: 5px;
+    background-color: #187dd7;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
   .icon-container-block1b img {
     width: 20px;
     padding-bottom: 7px;
@@ -629,22 +662,25 @@ h6 {
   }
   .block1 .mb-3,
   .my-3 {
-    margin-bottom: 0.5rem !important;
-    margin-top: 0.5rem !important;
+    margin-bottom: 0.3rem !important;
+    margin-top: 0.3rem !important;
   }
   .P_text_aling {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 12px;
     margin-bottom: 0px !important;
   }
 
   .apron-text-container p {
     font-size: 14px !important;
+    margin-bottom: 0rem;
+    line-height: 1.3;
   }
 
   .apron-text-container h5 {
-    font-size: 16px !important;
+    font-size: 14px !important;
+    margin-bottom: 0.3rem;
   }
   .block1b p {
     font-size: 14px !important;
@@ -656,8 +692,13 @@ h6 {
     margin-top: 0rem !important;
   }
 
+  .icon-container-block1b h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
   .container-block1 {
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
   .mobi_pad {
     margin-bottom: 50px;
@@ -682,20 +723,22 @@ h6 {
   .box3,
   .box4 {
     width: 100%;
-    height: 120px !important;
+    height: 80px !important;
     max-width: 250px;
   }
   .block1 h3 {
     color: #187dd7;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
+    line-height: 1.2;
   }
+
   .block1b-image-container {
     background-image: url("../img/Assets/Door.svg");
     width: 100%;
-    height: 190px !important;
-    max-width: 160px !important;
+    height: 230px !important;
+    max-width: 180px !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -715,15 +758,15 @@ h6 {
   .button-container {
     display: flex;
     flex-direction: row;
-    width: 180px;
+    width: 130px;
+    text-align: center;
     position: absolute;
-    bottom: -59%;
-    left: 27%;
+    bottom: -40%;
   }
   .block1b-image {
     width: 100%;
     height: auto;
-    width: 80px !important;
+    width: 100px !important;
     position: absolute;
     top: 20px;
     bottom: 0px;
@@ -752,7 +795,7 @@ h6 {
     height: 120px;
     max-width: 120px;
     border: 2px dashed #187dd7;
-    border-radius: 25px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;

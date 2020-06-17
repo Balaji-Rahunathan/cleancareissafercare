@@ -84,9 +84,7 @@ $("#draggable4").draggable({
   },
 });
 $("#draggable5").draggable({
- 
   stop: function (event, ui) {
-   
     var target = document.querySelector("#draggable" + slideIndex);
     target.style.top = 0;
     target.style.left = 0;
@@ -97,14 +95,14 @@ $("#draggable5").draggable({
   drag: function (event, ui) {
     var target = document.querySelector("#draggable" + slideIndex);
     target.style.opacity = 0.5;
-    $('.block2b-image-container').css("background-image","url('../assets/img/reverse/Sleeve_3.svg')");
+    $(".block2b-image-container").css(
+      "background-image",
+      "url('../assets/img/reverse/Sleeve_3.svg')"
+    );
   },
- 
 });
 $("#draggable6").draggable({
- 
   stop: function (event, ui) {
-   
     var target = document.querySelector("#draggable" + slideIndex);
     target.style.top = 0;
     target.style.left = 0;
@@ -115,9 +113,11 @@ $("#draggable6").draggable({
   drag: function (event, ui) {
     var target = document.querySelector("#draggable" + slideIndex);
     target.style.opacity = 0.5;
-    $('.block2c-image-container').css("background-image","url('../assets/img/reverse/Sleeve_2.svg')");
+    $(".block2c-image-container").css(
+      "background-image",
+      "url('../assets/img/reverse/Sleeve_2.svg')"
+    );
   },
- 
 });
 $("#droppable" + slideIndex).droppable({
   drop: function (ui, event) {
@@ -165,10 +165,7 @@ $("#droppable4").droppable({
 });
 $("#droppable5").droppable({
   drop: function (ui, event) {
-    $(".apron").attr(
-      "src",
-      "assets/img/Assets/Gloves.svg"
-    );
+    $(".apron").attr("src", "assets/img/Assets/Gloves.svg");
     $(".apron-image-container").css("height", "auto");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
@@ -176,10 +173,7 @@ $("#droppable5").droppable({
 });
 $("#droppable6").droppable({
   drop: function (ui, event) {
-    $(".apron1").attr(
-      "src",
-      "assets/img/Assets/Face shield.svg"
-    );
+    $(".apron1").attr("src", "assets/img/Assets/Face shield.svg");
     $(".apron-image-container").css("height", "auto");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
