@@ -684,18 +684,7 @@ h6 {
   .apron-text-container p {
     width: 100%;
   }
-  .block1b-image-container {
-    background-image: url("../img/Assets/Door.svg");
-    width: 100%;
-    height: 200px;
-    max-width: 150px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    margin: 0% 10%;
-  }
+
   .block1b-image {
     width: 100%;
     height: auto;
@@ -711,7 +700,7 @@ h6 {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    margin: 0% 10%;
+    margin: 0% 2%;
   }
 }
 @media (min-width: 377px) and (max-width: 596px) {
