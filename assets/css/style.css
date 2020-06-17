@@ -689,6 +689,15 @@ h6 {
   .block1a {
     margin-top: 2% !important;
   }
+  b,
+  strong {
+    font-weight: 600px !important;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+  }
   .block1b-image {
     width: 100%;
     height: auto;
@@ -862,7 +871,7 @@ h6 {
   left: 0%;
   top: 30%;
   opacity: 0.8;
-  width: 100px;
+  width: 70px;
 }
 
 .d_g_bg_ico_2 {
@@ -871,7 +880,7 @@ h6 {
   opacity: 0.8;
   top: 10%;
 
-  width: 100px;
+  width: 60px;
 }
 
 .d_g_bg_ico_3 {
@@ -879,5 +888,5 @@ h6 {
   right: 10%;
   top: 60%;
   opacity: 0.8;
-  width: 70px;
+  width: 50px;
 }
