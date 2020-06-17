@@ -619,7 +619,7 @@ h6 {
     background-color: #187dd7;
     color: #fff;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     border: 1px solid #187dd7;
     width: 100%;
   }
@@ -702,16 +702,16 @@ h6 {
     margin-bottom: 5%;
   }
   .block1a {
-    margin-top: 10px !important;
+    margin-top: 15px !important;
   }
-  b,
+  h5 b,
   strong {
     font-weight: 600px !important;
   }
   .button-container {
     display: flex;
     flex-direction: row;
-    width: 200px;
+    width: 150px;
   }
   .block1b-image {
     width: 100%;
