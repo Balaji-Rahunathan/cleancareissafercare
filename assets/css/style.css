@@ -615,6 +615,7 @@ h6 {
 @media only screen and (max-width: 600px) {
   .icon-container-block1b img {
     width: 20px;
+    padding-bottom: 7px;
   }
   .block1b-button {
     border-radius: 10px;
