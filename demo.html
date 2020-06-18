@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drag n Drop from a Div to an another Div using Jquery</title>
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css"
+    />
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <style type="text/css">
+      #draggable {
+        width: 200px;
+        height: 200px;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        border: 1px solid red;
+        z-index: -1;
+        margin: auto;
+      }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      .red {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="draggable">
+      <img src="assets/img/Airbone_Character/After/Character_Normal-03.svg" />
+    </div>
+    <div class="box"></div>
+    <script type="text/javascript">
+      $("#draggable").draggable({
+        helper: "original",
+        revert: "invalid",
+        drag: function () {
+          var dtop = $("#draggable").offset().top;
+          dleft = $("#draggable").offset().left;
+          dbottom = $("#draggable").offset().top + $("#draggable").height();
+          dright = $("#draggable").offset().left + $("#draggable").width();
+
+          btop = $(".box").offset().top;
+          bleft = $(".box").offset().left;
+          bbottom = $(".box").offset().top + $(".box").height();
+          bright = $(".box").offset().left + $(".box").width();
+
+          if (
+            dtop > btop &&
+            dleft > bleft &&
+            dright < bright &&
+            dbottom < bbottom
+          ) {
+            $("#draggable").html('<img src="assets/img/Assets/Apron.svg">');
+          } else {
+            $("#draggable").html('<img src="assets/img/Assets/Apron.svg">');
+          }
+        },
+      });
+
+      $(".box").droppable({
+        accept: "#draggable",
+        drop: function (event, ui) {
+          $("#draggable").html('<img src="assets/img/Assets/Apron.svg">');
+        },
+      });
+
+      dropElem.ondragover = function (e) {
+        if (e.stopPropagation) {
+          e.stopPropagation(); //Stops some browsers from redirecting.
+        }
+        var dragIcon = document.createElement(".aaa");
+        dragIcon.src = "assets/img/virusb1.svg";
+        dragIcon.width = 100;
+        e.dataTransfer.setDragImage(dragIcon, 0, 0);
+      };
+    </script>
+  </body>
+</html>
