@@ -607,6 +607,10 @@ h6 {
 }
 /****************reverse block ends here***********/
 @media only screen and (max-width: 600px) {
+  .bg_centre_cc {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   .d_g_bg_ico {
     position: relative;
     left: -17% !important;
