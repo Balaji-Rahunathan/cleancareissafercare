@@ -27,13 +27,193 @@
       .red {
         background: red;
       }
+     /***style for reverse slider  ***/
+     .block2d-image-container {
+  background-image: url("../img/reverse/Sleeve_2.svg");
+  width: 100%;
+  height: 500px;
+  max-width: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  margin: 0% 0%;
+}
+.block2e-image-container {
+  background-image: url("../img/reverse/Normal.svg");
+  width: 100%;
+  height: 500px;
+  max-width: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  margin: 0% 0%;
+}
+.block2d-image {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  position: relative;
+  /* top: 13%; */
+  bottom:30%;
+  right:3%
+}
+.block2e-image {
+  width: 100%;
+  height: 300px;
+  /* max-width: 100px; */
+  position: relative;
+  /* top: 13%; */
+  top:25%
+}
+.block2c-image {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  position: relative;
+  /* top: 13%; */
+  bottom:33%;
+  right:3%
+}
+.block2d-image {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  position: relative;
+  /* top: 13%; */
+  bottom:30%;
+  right:3%
+}
+.block2e-image {
+  width: 100%;
+  height: 300px;
+  /* max-width: 100px; */
+  position: relative;
+  /* top: 13%; */
+  top:25%
+}
+     /************/
     </style>
   </head>
   <body>
     <div id="draggable">
-      <img src="assets/img/Airbone_Character/After/Character_Normal-03.svg" />
+      <img id="drag-image" src="assets/img/Airbone_Character/After/Character_Normal-03.svg" />
     </div>
+    <div id="theDiv" src=""></div>
     <div class="box"></div>
+    <!--Droplet container slider-->
+    <section class="container-block1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 block1">
+            <div class="airborne-bg">
+              <img class="drop-img" src="assets/img/Airbone.svg" />
+            </div>
+    
+            <h3 class="my-4">Droplet and Contact Precautions</h3>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block2a order-1 order-md-0 order-lg-0 order-xl-0 my-auto justify-content-center"
+          >
+          <p>On Leaving Room</p>
+          <div class="block2d-image-container">
+            <img
+              class="block2d-image"
+              id="draggable7"
+              src="assets/img/Assets/Mask_1.svg"
+            />
+            
+          </div>
+          <div class="block2b-text-container my-3">
+            <h5><b>Step 2:</b> Put on a Mask</h5>
+            <p>Put on a mask</p>
+          </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block1b order-0 order-md-1 order-lg-1 order-xl-1"
+          >
+           
+            <div class="apron-image-container box6" id="droppable7">
+              <img
+                src=""
+                
+                class="apron2"
+              />
+            </div>
+            <div class="block1b-text-container7" style="display: none;">
+              <p class="P_text_aling">Step 3/4</p>
+              <div class="icon-container-block1b">
+                <img class="mr-3" src="assets/img/Tick_1.svg" />
+                <h5 class="my-3"><b>Completed</b></h5>
+              </div>
+              <div class="button-container">
+                <button class="block1b-button mx-1" onclick="plusSlides(1)">
+                  Continue
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-block1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 block1">
+            <div class="airborne-bg">
+              <img class="drop-img" src="assets/img/Airbone.svg" />
+            </div>
+
+            <h3 class="my-4">Droplet and Contact Precautions</h3>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block2a order-1 order-md-0 order-lg-0 order-xl-0 my-auto justify-content-center"
+          >
+          <p>On Leaving Room</p>
+          <div class="block2e-image-container">
+            <img
+              class="block2e-image"
+              id="draggable8"
+              src="assets/img/Assets/Apron.svg"
+            />
+            
+          </div>
+          <div class="block2b-text-container my-3">
+            <h5><b>Step 2:</b> Put on a Mask</h5>
+            <p>Put on a mask</p>
+          </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 block1b order-0 order-md-1 order-lg-1 order-xl-1"
+          >
+           
+            <div class="apron-image-container box6" id="droppable8">
+              <img
+                src=""
+                
+                class="apron3"
+              />
+            </div>
+            <div class="block1b-text-container8" style="display: none;">
+              <p class="P_text_aling">Step 3/4</p>
+              <div class="icon-container-block1b">
+                <img class="mr-3" src="assets/img/Tick_1.svg" />
+                <h5 class="my-3"><b>Completed</b></h5>
+              </div>
+              <div class="button-container">
+                <!-- <button class="block1b-button mx-1" onclick="plusSlides(1)">
+                  Continue
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+       <!--Droplet container slider ends here-->
     <script type="text/javascript">
       $("#draggable").draggable({
         helper: "original",
@@ -48,6 +228,8 @@
           bleft = $(".box").offset().left;
           bbottom = $(".box").offset().top + $(".box").height();
           bright = $(".box").offset().left + $(".box").width();
+          $('#theDiv').attr("src",".../assets/img/Airbone_Character/After/Character_Normal-03.svg");
+          // $('#theDiv').append($('<img>',{id:'theImg',src:'assets/img/Airbone_Character/After/Character_Normal-03.svg'}))
 
           if (
             dtop > btop &&
@@ -56,6 +238,7 @@
             dbottom < bbottom
           ) {
             $("#draggable").html('<img src="assets/img/Assets/Apron.svg">');
+            $('#drag-image').attr("src","assets/img/Airbone_Character/After/Character_Normal-03.svg")
           } else {
             $("#draggable").html('<img src="assets/img/Assets/Apron.svg">');
           }

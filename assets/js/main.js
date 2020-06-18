@@ -179,3 +179,57 @@ $("#droppable6").droppable({
     $(".block1b-text-container" + slideIndex).css("display", "block");
   },
 });
+$("#draggable7").draggable({
+  stop: function (event, ui) {
+    var target = document.querySelector("#draggable" + slideIndex);
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+  },
+  drag: function (event, ui) {
+    var target = document.querySelector("#draggable" + slideIndex);
+    target.style.opacity = 0.5;
+   
+  },
+});
+$("#draggable8").draggable({
+  stop: function (event, ui) {
+    var target = document.querySelector("#draggable" + slideIndex);
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+  },
+  drag: function (event, ui) {
+    var target = document.querySelector("#draggable" + slideIndex);
+    target.style.opacity = 0.5;
+   
+  },
+});
+$("#droppable7").droppable({
+  drop: function (ui, event) {
+    $(".apron2").attr("src", "assets/img/Assets/Mask_1.svg");
+    $(".apron-image-container").css("height", "auto");
+    $("#draggable" + slideIndex).hide();
+    $(".block1b-text-container" + slideIndex).css("display", "block");
+    $(".block2d-image-container").css(
+      "background-image",
+      "url('../assets/img/reverse/Sleeve_1.svg')"
+    );
+  },
+});
+$("#droppable8").droppable({
+  drop: function (ui, event) {
+    $(".apron3").attr("src", "assets/img/Assets/Apron.svg");
+    $(".apron-image-container").css("height", "auto");
+    $("#draggable" + slideIndex).hide();
+    $(".block1b-text-container" + slideIndex).css("display", "block");
+    $(".block2d-image-container").css(
+      "background-image",
+      "url('../assets/img/reverse/Normal.svg')"
+    );
+  },
+});
