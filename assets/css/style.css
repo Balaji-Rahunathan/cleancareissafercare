@@ -601,9 +601,12 @@ h6 {
 }
 @media only screen and (max-width: 800px) {
   .bg_centre_cc {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
+}
+/****************reverse block ends here***********/
+@media only screen and (max-width: 600px) {
   .d_g_bg_ico {
     position: relative;
     left: -17% !important;
@@ -628,9 +631,6 @@ h6 {
     opacity: 0.8;
     width: 65px !important;
   }
-}
-/****************reverse block ends here***********/
-@media only screen and (max-width: 600px) {
   .icon-container-block1b .mr-3 {
     margin-right: 0.5rem !important;
   }
@@ -785,7 +785,7 @@ h6 {
     width: 130px;
     text-align: center;
     position: absolute;
-    bottom: -38%;
+    bottom: -35%;
   }
   .block1b-image {
     width: 100%;
@@ -949,7 +949,7 @@ h6 {
   left: 0%;
   top: 30%;
   opacity: 0.8;
-  width: 70px;
+  width: 150px;
 }
 
 .d_g_bg_ico_2 {
@@ -958,7 +958,7 @@ h6 {
   opacity: 0.8;
   top: 10%;
 
-  width: 60px;
+  width: 100px;
 }
 
 .d_g_bg_ico_3 {
@@ -966,5 +966,5 @@ h6 {
   right: 10%;
   top: 60%;
   opacity: 0.8;
-  width: 50px;
+  width: 80px;
 }
