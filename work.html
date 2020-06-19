@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery UI Droppable - Default functionality</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      #drag {
+        width: 15vw;
+        height: 20vw;
+      }
+
+      #drag_img {
+        width: 15vw;
+        height: 20vw;
+        position: absolute;
+        z-index: 1px;
+        top: 0px;
+      }
+
+      #drop {
+        width: 100px !important;
+        height: 100px !important;
+      }
+
+      .div1 {
+        background-repeat: no-repeat;
+        background-size: 90% 90%;
+        background-position: center;
+        width: 15vw;
+        height: 20vw;
+        border: 2px dashed grey;
+        border-radius: 15%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="div1">
+            <div id="drop" droppable="true"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <div id="disable">
+              <img
+                id="drag"
+                src="assets/img/Airbone_Character/After/Character_Normal-03.svg"
+              />
+            </div>
+            <img
+              id="drag_img"
+              style="display: none;"
+              src="assets/img/Airbone_Character/Before/Character_Face shield-03.svg"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="P_text_aling">Step 1/4</p>
+          <div id="drop_drag_next_con" style="display: none;">
+            <h5><b>Completed</b></h5>
+          </div>
+          <button id="drop_drag_next_nex" style="display: none;">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#drag").draggable({
+          helper: "original",
+          revert: "invalid",
+          drag: function (event, ui) {
+            $("#drag").attr("src", "assets/img/Assets/Apron.svg");
+            $("#drag_img").css("display", "block");
+          },
+        });
+        $("#drop").droppable({
+          accept: "#drag",
+          drop: function (event, ui) {
+            var target = document.getElementById("drag");
+            target.style.opacity = 0.5;
+            target.style.width = "100px";
+            target.style.width = "100px";
+
+            document.getElementById("drop_drag_next_nex").style.display =
+              "block";
+            document.getElementById("drop_drag_next_con").style.display =
+              "block";
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
