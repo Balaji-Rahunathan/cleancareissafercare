@@ -439,10 +439,7 @@ h6 {
 .apron {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  max-width: 150px;
-  max-height: 150px;
+  width: 150px;
 }
 .apron-text-container {
   display: flex;
@@ -477,7 +474,7 @@ h6 {
 .block1b-image-container {
   background-image: url("../img/Assets/Door.svg");
   width: 100%;
-  height: 400px;
+  height: auto;
   max-width: 300px;
   background-size: cover;
   background-position: center;
@@ -520,7 +517,7 @@ h6 {
   margin-top: 20px;
   margin-bottom: 0px;
 }
-.P_reverse_text_aling {
+.P_reverse_text_aling{
   text-align: center;
   /* margin-top: 20px; */
   margin-bottom: 0px;
@@ -597,8 +594,8 @@ h6 {
   max-width: 80px;
   position: relative;
   /* top: 13%; */
-  bottom: 33%;
-  right: 3%;
+  bottom:33%;
+  right:3%
 }
 .apron1 {
   width: 100%;
@@ -609,7 +606,7 @@ h6 {
 .bg_centre_cc {
   padding-left: 10%;
 }
-
+ 
 @media only screen and (max-width: 800px) {
   .bg_centre_cc {
     padding-left: 5%;
@@ -811,17 +808,16 @@ h6 {
     top: 25px;
     bottom: 0px;
   }
-
-  .block-reverse {
-    display: flex;
-    flex-direction: row;
+  .block-reverse{
+    display:flex;
+    flex-direction:row
   }
-  .reverse_block {
-    margin: 20px 0px;
-    display: flex;
-    justify-content: space-evenly !important;
-    flex-direction: row !important;
-    height: 100px;
+  .reverse_block{
+  margin:20px 0px;
+  display:flex;
+  justify-content: space-evenly !important;
+  flex-direction: row !important;
+  height:100px
   }
   .block2b-image-container {
     background-image: url("../img/reverse/Sleeve_4.svg");
@@ -1038,16 +1034,16 @@ h6 {
   max-width: 80px;
   position: relative;
   /* top: 13%; */
-  bottom: 30%;
-  right: 3%;
+  bottom:30%;
+  right:3%
 }
 .block2e-image {
   width: 100%;
   height: 300px;
-
+  /* max-width: 100px; */
   position: relative;
-
-  top: 25%;
+  /* top: 13%; */
+  top:25%
 }
 /* .block2c-image {
   width: 100%;
@@ -1059,55 +1055,36 @@ h6 {
   right:3%
 } */
 
-.drag {
-  width: 100%;
-  height: auto;
-}
 
-.drag_img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: 1px;
-}
 
-.drop {
-  height: 100% !important;
-  width: 100% !important;
-}
-.div1 {
-  width: 100%;
-  height: auto;
-}
+   .drag {
+        width: 300px;
+        height: 300px;
+      }
 
-.rwl {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
+      .drag_img {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        z-index: 1px;
+        top: 0px;
+      }
 
-.block1b-image_d_d {
-  width: 100%;
-  height: auto;
-  width: 150px;
-  bottom: 0px;
-  position: absolute;
-}
-
-@media only screen and (max-width: 600px) {
-  .block1b-image-d-d {
-    width: 100%;
-    height: auto;
-    width: 115px !important;
-    position: absolute;
-    top: 25px;
-    bottom: 0px;
-  }
-}
-
-.z_index {
-  z-index: 999;
-}
+      .drop {
+        width: 100px !important;
+        height: 100px !important;
+      }
+      .div1 {
+        background-repeat: no-repeat;
+        background-size: 90% 90%;
+        background-position: center;
+        width: 300px;
+        height: 300px;
+        border: 2px dashed grey;
+        border-radius: 15%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+      }
