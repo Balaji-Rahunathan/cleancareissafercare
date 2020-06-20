@@ -1093,6 +1093,19 @@ h6 {
     position: absolute;
   }
 
+  .drop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 125px;
+    max-height: 125px;
+    position: fixed;
+  }
+
   .drag {
     width: 100%;
     height: auto;
