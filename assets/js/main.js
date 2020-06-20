@@ -154,6 +154,8 @@ $(function () {
 
       var target = document.getElementById("drag");
 
+      target.style.maxwidth = "24%";
+      target.style.maxHeight = "24%";
       target.style.top = 0;
       target.style.left = 0;
       target.style.right = 0;
@@ -167,6 +169,8 @@ $(function () {
     drop: function (event, ui) {
       var target = document.getElementById("drag");
       target.style.opacity = 0.5;
+      target.style.maxwidth = "24%";
+      target.style.maxHeight = "24%";
 
       document.getElementById("drop_drag_next_nex").style.display = "block";
       document.getElementById("drop_drag_next_con").style.display = "block";
@@ -182,7 +186,8 @@ $(function () {
       $("#drag_1").attr("src", "assets/img/Assets/Apron.svg");
 
       var target = document.getElementById("drag_1");
-
+      target.style.maxwidth = "24%";
+      target.style.maxHeight = "24%";
       target.style.top = 0;
       target.style.left = 0;
       target.style.right = 0;
@@ -196,7 +201,8 @@ $(function () {
     drop: function (event, ui) {
       var target = document.getElementById("drag_1");
       target.style.opacity = 0.5;
-
+      target.style.maxwidth = "24%";
+      target.style.maxHeight = "24%";
       document.getElementById("drop_drag_next_nex_1").style.display = "block";
       document.getElementById("drop_drag_next_con_1").style.display = "block";
     },
@@ -211,7 +217,8 @@ $(function () {
       $("#drag_2").attr("src", "assets/img/Assets/Mask_1.svg");
 
       var target = document.getElementById("drag_2");
-
+      target.style.maxwidth = "24%";
+      target.style.maxHeight = "24%";
       target.style.top = 0;
       target.style.left = 0;
       target.style.right = 0;
@@ -225,7 +232,8 @@ $(function () {
     drop: function (event, ui) {
       var target = document.getElementById("drag_2");
       target.style.opacity = 0.5;
-
+      target.style.maxwidth = "24%";
+      target.style.maxHeight = "24%";
       document.getElementById("drop_drag_next_nex_2").style.display = "block";
       document.getElementById("drop_drag_next_con_2").style.display = "block";
     },
@@ -240,7 +248,8 @@ $(function () {
       $("#drag_3").attr("src", "assets/img/Assets/Sanitizer.svg");
 
       var target = document.getElementById("drag_3");
-
+      target.style.maxwidth = "24%";
+      target.style.maxHeight = "24%";
       target.style.top = 0;
       target.style.left = 0;
       target.style.right = 0;
@@ -254,7 +263,8 @@ $(function () {
     drop: function (event, ui) {
       var target = document.getElementById("drag_3");
       target.style.opacity = 0.5;
-
+      target.style.maxwidth = "24%";
+      target.style.maxHeight = "24%";
       document.getElementById("drop_drag_next_con_3").style.display = "block";
     },
   });

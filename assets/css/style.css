@@ -1170,8 +1170,9 @@ h6 {
   .P_text_aling {
     text-align: center;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 20px;
+    font-weight: 500;
   }
   .icon-container-block1b_1 h5 {
     font-size: 16px;
