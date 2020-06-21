@@ -305,3 +305,72 @@ if ($(window).width() > 600) {
 } else {
   $(".rwl_1").removeClass("rwl");
 }
+
+$("#drag_d_1").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    var target = document.getElementById("drag_d_1");
+
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+  },
+});
+$("#drop_d_1").droppable({
+  drop: function (event, ui) {
+    $("#drag_img_d_1").css("display", "block");
+    $("#drop_d_1").hide();
+    $("#drag_d_1").hide();
+    $(".block1b-text-container").css("display", "block");
+  },
+});
+$("#drag_d_2").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    var target = document.getElementById("drag_d_2");
+
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+  },
+});
+$("#drop_d_2").droppable({
+  drop: function (event, ui) {
+    $("#drag_img_d_2").css("display", "block");
+    $("#drop_d_2").hide();
+    $("#drag_d_2").hide();
+    var target = document.getElementById("drop_d_2");
+    document.getElementById("drop_drag_next_con_d_2").style.display = "block";
+    document.getElementById("drop_drag_next_nex_d_2").style.display = "block";
+  },
+});
+
+$("#drag_d_3").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    var target = document.getElementById("drag_d_3");
+
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+  },
+});
+$("#drop_d_3").droppable({
+  drop: function (event, ui) {
+    $("#drag_img_d_3").css("display", "block");
+    $("#drop_d_3").hide();
+    $("#drag_d_3").hide();
+    var target = document.getElementById("drop_d_3");
+    document.getElementById("drop_drag_next_con_d_3").style.display = "block";
+    document.getElementById("drop_drag_next_nex_d_3").style.display = "block";
+  },
+});

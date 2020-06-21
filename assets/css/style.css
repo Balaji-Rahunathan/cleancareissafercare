@@ -1063,7 +1063,11 @@ h6 {
     width: 110px !important;
     position: absolute;
   }
-
+  .drag_img_d {
+    height: auto;
+    width: 86px !important;
+    position: absolute;
+  }
   .drop img {
     width: 65px;
     height: 65px;
@@ -1092,6 +1096,11 @@ h6 {
   .drag_img {
     height: auto;
     width: 146px;
+    position: absolute;
+  }
+  .drag_img_d {
+    height: auto;
+    width: 114px;
     position: absolute;
   }
 
