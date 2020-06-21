@@ -247,6 +247,7 @@ $("#drop_3").droppable({
     var target = document.getElementById("drop_3");
     target.style.opacity = 0.5;
     document.getElementById("drop_drag_next_con_3").style.display = "block";
+    document.getElementById("drop_drag_next_nex_3").style.display = "block";
   },
 });
 

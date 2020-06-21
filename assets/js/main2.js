@@ -295,6 +295,7 @@ $("#drop_4").droppable({
     $("#drag_4").hide();
     var target = document.getElementById("drop_4");
     target.style.opacity = 0.5;
+    document.getElementById("drop_drag_next_nex_4").style.display = "block";
     document.getElementById("drop_drag_next_con_4").style.display = "block";
   },
 });
