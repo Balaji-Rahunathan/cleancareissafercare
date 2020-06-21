@@ -5,7 +5,10 @@ body {
   height: 100%;
 }
 .logo_img_d {
-  width: 40%;
+  width: 50%;
+}
+.logo_img_d_1 {
+  width: 20%;
 }
 
 a:link {
@@ -123,7 +126,7 @@ h6 {
 
 .main_bg {
   background-color: #e8f4ff;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
