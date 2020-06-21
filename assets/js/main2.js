@@ -172,158 +172,131 @@ $(document).ready(function () {
   });
 });
 
-$(function () {
-  $("#drag").draggable({
-    helper: "original",
-    revert: "invalid",
-    drag: function (event, ui) {
-      $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
-
-      var target = document.getElementById("drag");
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      target.style.top = 0;
-      target.style.left = 0;
-      target.style.right = 0;
-      target.style.bottom = 0;
-      target.style.opacity = 1;
-      document.getElementById("drag_img").style.display = "block";
-    },
-  });
-  $("#drop").droppable({
-    accept: "#drag",
-    drop: function (event, ui) {
-      var target = document.getElementById("drag");
-      target.style.opacity = 0.5;
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      document.getElementById("drop_drag_next_nex").style.display = "block";
-      document.getElementById("drop_drag_next_con").style.display = "block";
-    },
-  });
+$("#drag").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
+    var target = document.getElementById("drag");
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+    document.getElementById("drag_img").style.display = "block";
+  },
+});
+$("#drop").droppable({
+  drop: function (event, ui) {
+    $("#drop").html('<img src="assets/img/Assets/Gloves.svg">');
+    $("#drag").hide();
+    var target = document.getElementById("drop");
+    target.style.opacity = 0.5;
+    document.getElementById("drop_drag_next_nex").style.display = "block";
+    document.getElementById("drop_drag_next_con").style.display = "block";
+  },
 });
 
-$(function () {
-  $("#drag_1").draggable({
-    helper: "original",
-    revert: "invalid",
-    drag: function (event, ui) {
-      $("#drag_1").attr("src", "assets/img/Assets/Gown.svg");
-
-      var target = document.getElementById("drag_1");
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      target.style.top = 0;
-      target.style.left = 0;
-      target.style.right = 0;
-      target.style.bottom = 0;
-      target.style.opacity = 1;
-      document.getElementById("drag_img_1").style.display = "block";
-    },
-  });
-  $("#drop_1").droppable({
-    accept: "#drag_1",
-    drop: function (event, ui) {
-      var target = document.getElementById("drag_1");
-      target.style.opacity = 0.5;
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      document.getElementById("drop_drag_next_nex_1").style.display = "block";
-      document.getElementById("drop_drag_next_con_1").style.display = "block";
-    },
-  });
+$("#drag_1").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    $("#drag_1").attr("src", "assets/img/Assets/Gown.svg");
+    var target = document.getElementById("drag_1");
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+    document.getElementById("drag_img_1").style.display = "block";
+  },
+});
+$("#drop_1").droppable({
+  drop: function (event, ui) {
+    $("#drop_1").html('<img src="assets/img/Assets/Gown.svg">');
+    $("#drag_1").hide();
+    var target = document.getElementById("drop_1");
+    target.style.opacity = 0.5;
+    document.getElementById("drop_drag_next_nex_1").style.display = "block";
+    document.getElementById("drop_drag_next_con_1").style.display = "block";
+  },
 });
 
-$(function () {
-  $("#drag_2").draggable({
-    helper: "original",
-    revert: "invalid",
-    drag: function (event, ui) {
-      $("#drag_2").attr("src", "assets/img/Assets/Sanitizer.svg");
+$("#drag_2").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    $("#drag_2").attr("src", "assets/img/Assets/Sanitizer.svg");
+    var target = document.getElementById("drag_2");
 
-      var target = document.getElementById("drag_2");
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      target.style.top = 0;
-      target.style.left = 0;
-      target.style.right = 0;
-      target.style.bottom = 0;
-      target.style.opacity = 1;
-      document.getElementById("drag_img_2").style.display = "block";
-    },
-  });
-  $("#drop_2").droppable({
-    accept: "#drag_2",
-    drop: function (event, ui) {
-      var target = document.getElementById("drag_2");
-      target.style.opacity = 0.5;
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      document.getElementById("drop_drag_next_nex_2").style.display = "block";
-      document.getElementById("drop_drag_next_con_2").style.display = "block";
-    },
-  });
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+    document.getElementById("drag_img_2").style.display = "block";
+  },
+});
+$("#drop_2").droppable({
+  drop: function (event, ui) {
+    $("#drop_2").html('<img src="assets/img/Assets/Sanitizer.svg">');
+    $("#drag_2").hide();
+    var target = document.getElementById("drop_2");
+    target.style.opacity = 0.5;
+    document.getElementById("drop_drag_next_nex_2").style.display = "block";
+    document.getElementById("drop_drag_next_con_2").style.display = "block";
+  },
 });
 
-$(function () {
-  $("#drag_3").draggable({
-    helper: "original",
-    revert: "invalid",
-    drag: function (event, ui) {
-      $("#drag_3").attr("src", "assets/img/Assets/Face shield & Mask.svg");
-
-      var target = document.getElementById("drag_3");
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      target.style.top = 0;
-      target.style.left = 0;
-      target.style.right = 0;
-      target.style.bottom = 0;
-      target.style.opacity = 1;
-      document.getElementById("drag_img_3").style.display = "block";
-    },
-  });
-  $("#drop_3").droppable({
-    accept: "#drag_3",
-    drop: function (event, ui) {
-      var target = document.getElementById("drag_3");
-      target.style.opacity = 0.5;
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      document.getElementById("drop_drag_next_nex_3").style.display = "block";
-      document.getElementById("drop_drag_next_con_3").style.display = "block";
-    },
-  });
+$("#drag_3").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    $("#drag_3").attr("src", "assets/img/Assets/Face shield & Mask.svg");
+    var target = document.getElementById("drag_3");
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+    document.getElementById("drag_img_3").style.display = "block";
+  },
+});
+$("#drop_3").droppable({
+  drop: function (event, ui) {
+    $("#drop_3").html('<img src="assets/img/Assets/Face shield & Mask.svg">');
+    $("#drag_3").hide();
+    var target = document.getElementById("drop_3");
+    target.style.opacity = 0.5;
+    document.getElementById("drop_drag_next_nex_3").style.display = "block";
+    document.getElementById("drop_drag_next_con_3").style.display = "block";
+  },
 });
 
-$(function () {
-  $("#drag_4").draggable({
-    helper: "original",
-    revert: "invalid",
-    drag: function (event, ui) {
-      $("#drag_4").attr("src", "assets/img/Assets/Sanitizer.svg");
+$("#drag_4").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    $("#drag_4").attr("src", "assets/img/Assets/Sanitizer.svg");
 
-      var target = document.getElementById("drag_4");
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      target.style.top = 0;
-      target.style.left = 0;
-      target.style.right = 0;
-      target.style.bottom = 0;
-      target.style.opacity = 1;
-      document.getElementById("drag_img_4").style.display = "block";
-    },
-  });
-  $("#drop_4").droppable({
-    accept: "#drag_4",
-    drop: function (event, ui) {
-      var target = document.getElementById("drag_4");
-      target.style.opacity = 0.5;
-      target.style.maxwidth = "21%";
-      target.style.maxHeight = "21%";
-      document.getElementById("drop_drag_next_con_4").style.display = "block";
-    },
-  });
+    var target = document.getElementById("drag_4");
+
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+    document.getElementById("drag_img_4").style.display = "block";
+  },
+});
+$("#drop_4").droppable({
+  drop: function (event, ui) {
+    $("#drop_4").html('<img src="assets/img/Assets/Sanitizer.svg">');
+    $("#drag_4").hide();
+    var target = document.getElementById("drop_4");
+    target.style.opacity = 0.5;
+    document.getElementById("drop_drag_next_con_4").style.display = "block";
+  },
 });
 
 if ($(window).width() > 600) {

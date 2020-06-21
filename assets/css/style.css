@@ -663,7 +663,7 @@ h6 {
   }
   .P_text_aling {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 
     padding-bottom: 3px !important;
     font-size: 12px !important;
@@ -684,7 +684,7 @@ h6 {
 
   .P_text_aling_1 {
     font-size: 14px !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 30px !important;
     font-weight: 600 !important;
   }
 
@@ -734,8 +734,8 @@ h6 {
   .block1b-image-container {
     background-image: url("../img/Assets/Door.svg");
     width: 100%;
-    height: 230px !important;
-    max-width: 180px !important;
+    height: 300px !important;
+    max-width: 250px !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -758,14 +758,14 @@ h6 {
     width: 130px;
     text-align: center;
     position: absolute;
-    bottom: -150%;
-    margin-bottom: 1%;
+    bottom: -220%;
+    margin-bottom: 5%;
   }
   .block1b-image {
     width: 100%;
     height: auto;
-    width: 115px !important;
-    position: absolute;
+    width: 200px !important;
+
     top: 25px;
     bottom: 0px;
   }
@@ -988,10 +988,6 @@ h6 {
   right:3%
 } */
 
-.drop {
-  height: 100% !important;
-  width: 100% !important;
-}
 .div1 {
   width: 100%;
   height: auto;
@@ -1055,64 +1051,100 @@ h6 {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 900px) {
-  .drag {
-    width: 100%;
-    height: auto;
-    width: 150px;
-
-    position: absolute;
-  }
-  .drop {
-    width: 100%;
-    height: auto;
-    width: 80px;
-    height: 80px;
-    position: fixed;
-  }
-  .drag_img {
-    width: 100%;
-    height: auto;
-    width: 150px;
-
-    position: absolute;
-  }
+@media screen and (max-width: 600px) {
   .block1b-image {
     width: 100%;
     height: auto;
     width: 150px;
+  }
+
+  .block1b-image_21 {
+    width: 100%;
+    height: auto;
+    width: 80px !important;
+    top: 25px;
+    bottom: 0px;
+  }
+  .drag_img {
+    height: auto;
+    width: 110px !important;
     position: absolute;
+  }
+
+  .drop img {
+    width: 65px;
+    height: 65px;
+  }
+  .drag_img_21 {
+    height: auto;
+    width: 86px !important;
+    position: absolute;
+  }
+
+  .drag_21 {
+    height: auto;
+    width: 86px !important;
+  }
+
+  .drop {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    margin-left: auto;
+  }
+  .drag {
+    height: auto;
+    width: 200px;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
+  .block1b-image_21 {
+    width: 100%;
+    height: auto;
+    width: 100px !important;
+    top: 25px;
+    bottom: 0px;
+  }
   .block1b-image {
     width: 100%;
     height: auto;
-    width: 170px;
-    position: absolute;
+    width: 200px;
   }
   .drag_img {
-    width: 100%;
     height: auto;
-    width: 170px;
-
+    width: 146px;
     position: absolute;
   }
-  .drop {
+  .drag_21 {
+    height: auto;
+    width: 150px;
+  }
+  .drag_img_21 {
+    height: auto;
+    width: 115px !important;
+    position: absolute;
+  }
+  .drop img {
     width: 100%;
     height: auto;
-    width: 120px;
-    height: 120px;
-    position: fixed;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .drop {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-left: auto;
   }
 
   .drag {
-    width: 100%;
     height: auto;
-    width: 170px;
-
-    position: absolute;
+    width: 200px;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -1312,22 +1344,6 @@ h6 {
     padding-bottom: 0px;
   }
 
-  .drag_img {
-    width: 100%;
-    height: auto;
-    max-width: 115px !important;
-    position: absolute !important;
-    top: 25px;
-    bottom: 0px;
-  }
-  .drag {
-    width: 100%;
-    height: auto;
-    max-width: 115px !important;
-    position: absolute !important;
-    top: 25px;
-    bottom: 0px;
-  }
   .bg_centre_cc {
     padding-left: 5%;
     padding-right: 5%;
