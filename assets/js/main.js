@@ -150,8 +150,6 @@ $("#drag").draggable({
   drag: function (event, ui) {
     $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
     var target = document.getElementById("drag");
-    target.style.height = "200px";
-    target.style.width = "200px";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -179,8 +177,6 @@ $("#drag_1").draggable({
   drag: function (event, ui) {
     $("#drag_1").attr("src", "assets/img/Assets/Apron.svg");
     var target = document.getElementById("drag_1");
-    target.style.height = "200px";
-    target.style.width = "200px";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -207,8 +203,6 @@ $("#drag_2").draggable({
   drag: function (event, ui) {
     $("#drag_2").attr("src", "assets/img/Assets/Mask_1.svg");
     var target = document.getElementById("drag_2");
-    target.style.height = "200px";
-    target.style.width = "200px";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -236,8 +230,6 @@ $("#drag_3").draggable({
     $("#drag_3").attr("src", "assets/img/Assets/Sanitizer.svg");
 
     var target = document.getElementById("drag_3");
-    target.style.height = "200px";
-    target.style.width = "200px";
 
     target.style.top = 0;
     target.style.left = 0;
