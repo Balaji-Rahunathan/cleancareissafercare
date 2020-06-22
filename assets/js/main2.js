@@ -177,7 +177,7 @@ $("#drag").draggable({
   revert: "invalid",
   drag: function (event, ui) {
     var target = document.getElementById("drag");
-    target.style.width = "40%";
+    target.style.width = "35%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -209,7 +209,7 @@ $("#drag_1").draggable({
   revert: "invalid",
   drag: function (event, ui) {
     var target = document.getElementById("drag_1");
-    target.style.width = "40%";
+    target.style.width = "25%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -241,7 +241,7 @@ $("#drag_2").draggable({
   revert: "invalid",
   drag: function (event, ui) {
     var target = document.getElementById("drag_2");
-    target.style.width = "40%";
+    target.style.width = "30%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -273,7 +273,7 @@ $("#drag_3").draggable({
   revert: "invalid",
   drag: function (event, ui) {
     var target = document.getElementById("drag_3");
-    target.style.width = "40%";
+    target.style.width = "30%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -305,7 +305,7 @@ $("#drag_4").draggable({
   revert: "invalid",
   drag: function (event, ui) {
     var target = document.getElementById("drag_4");
-    target.style.width = "40%";
+    target.style.width = "30%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
