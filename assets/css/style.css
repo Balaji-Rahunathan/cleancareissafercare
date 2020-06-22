@@ -1336,3 +1336,7 @@ h6 {
 .z_index {
   z-index: 999;
 }
+
+.button-container a {
+  color: #fff;
+}

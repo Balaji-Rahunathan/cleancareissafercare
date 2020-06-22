@@ -148,8 +148,8 @@ $("#drag").draggable({
   helper: "original",
   revert: "invalid",
   drag: function (event, ui) {
-    $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
     var target = document.getElementById("drag");
+    target.style.width = "40%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -158,7 +158,13 @@ $("#drag").draggable({
     document.getElementById("drag_img").style.display = "block";
   },
 });
-
+$("#drag").draggable({
+  cursor: "move",
+  cursorAt: { width: "50%", height: "50%" },
+  helper: function (event) {
+    return $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
+  },
+});
 $("#drop").droppable({
   drop: function (event, ui) {
     $("#drop").html('<img src="assets/img/Assets/Gloves.svg">');
@@ -177,6 +183,7 @@ $("#drag_1").draggable({
   drag: function (event, ui) {
     $("#drag_1").attr("src", "assets/img/Assets/Apron.svg");
     var target = document.getElementById("drag_1");
+    target.style.width = "40%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -185,7 +192,13 @@ $("#drag_1").draggable({
     document.getElementById("drag_img_1").style.display = "block";
   },
 });
-
+$("#drag_1").draggable({
+  cursor: "move",
+  cursorAt: { width: "50%", height: "50%" },
+  helper: function (event) {
+    return $("#drag_1").html('<img src="assets/img/Assets/Gloves.svg">');
+  },
+});
 $("#drop_1").droppable({
   drop: function (event, ui) {
     $("#drop_1").html('<img src="assets/img/Assets/Apron.svg">');
@@ -201,14 +214,21 @@ $("#drag_2").draggable({
   helper: "original",
   revert: "invalid",
   drag: function (event, ui) {
-    $("#drag_2").attr("src", "assets/img/Assets/Mask_1.svg");
     var target = document.getElementById("drag_2");
+    target.style.width = "40%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
     document.getElementById("drag_img_2").style.display = "block";
+  },
+});
+$("#drag_2").draggable({
+  cursor: "move",
+  cursorAt: { width: "50%", height: "50%" },
+  helper: function (event) {
+    return $("#drag_2").attr("src", "assets/img/Assets/Mask_1.svg");
   },
 });
 $("#drop_2").droppable({
@@ -227,16 +247,21 @@ $("#drag_3").draggable({
   helper: "original",
   revert: "invalid",
   drag: function (event, ui) {
-    $("#drag_3").attr("src", "assets/img/Assets/Sanitizer.svg");
-
     var target = document.getElementById("drag_3");
-
+    target.style.width = "40%";
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
     document.getElementById("drag_img_3").style.display = "block";
+  },
+});
+$("#drag_3").draggable({
+  cursor: "move",
+  cursorAt: { width: "50%", height: "50%" },
+  helper: function (event) {
+    return $("#drag_3").attr("src", "assets/img/Assets/Sanitizer.svg");
   },
 });
 $("#drop_3").droppable({
