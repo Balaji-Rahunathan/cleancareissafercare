@@ -219,8 +219,8 @@ $("#drop").droppable({
   drop: function (event, ui) {
     $("#drop").html('<img src="assets/img/Assets/Gloves.svg">');
     $("#drag").hide();
-    $("#active_r_1").removeClass("active_1").addClass("active_2");
-    $("#active_r_1_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_1").removeClass("active_2").addClass("active_1");
+    $("#active_r_1_m").removeClass("active_2").addClass("active_1");
     dropped = true;
     var target = document.getElementById("drop");
     target.style.opacity = 0.5;
@@ -268,8 +268,8 @@ $("#drop_1").droppable({
   drop: function (event, ui) {
     $("#drop_1").html('<img src="assets/img/Assets/Gown.svg">');
     $("#drag_1").hide();
-    $("#active_r_2").removeClass("active_1").addClass("active_2");
-    $("#active_r_2_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_2").removeClass("active_2").addClass("active_1");
+    $("#active_r_2_m").removeClass("active_2").addClass("active_1");
     dropped1 = true;
     var target = document.getElementById("drop_1");
     target.style.opacity = 0.5;
@@ -364,8 +364,8 @@ $("#drop_3").droppable({
   drop: function (event, ui) {
     $("#drop_3").html('<img src="assets/img/Assets/Face shield & Mask.svg">');
     $("#drag_3").hide();
-    $("#active_r_4").removeClass("active_1").addClass("active_2");
-    $("#active_r_4_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_4").removeClass("active_2").addClass("active_1");
+    $("#active_r_4_m").removeClass("active_2").addClass("active_1");
     dropped3 = true;
     var target = document.getElementById("drop_3");
     target.style.opacity = 0.5;
@@ -468,8 +468,8 @@ $("#drop_d_2").droppable({
     $("#drag_img_d_2").css("display", "block");
     $("#drop_d_2").hide();
     $("#drag_d_2").hide();
-    $("#active_r_5").removeClass("active_1").addClass("active_2");
-    $("#active_r_5_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_5").removeClass("active_2").addClass("active_1");
+    $("#active_r_5_m").removeClass("active_2").addClass("active_1");
     var target = document.getElementById("drop_d_2");
     document.getElementById("drop_drag_next_con_d_2").style.display = "block";
     document.getElementById("drop_drag_next_nex_d_2").style.display = "block";
@@ -494,8 +494,8 @@ $("#drop_d_3").droppable({
     $("#drag_img_d_3").css("display", "block");
     $("#drop_d_3").hide();
     $("#drag_d_3").hide();
-    $("#active_r_3").removeClass("active_1").addClass("active_2");
-    $("#active_r_3_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_3").removeClass("active_2").addClass("active_1");
+    $("#active_r_3_m").removeClass("active_2").addClass("active_1");
     var target = document.getElementById("drop_d_3");
     document.getElementById("drop_drag_next_con_d_3").style.display = "block";
     document.getElementById("drop_drag_next_nex_d_3").style.display = "block";

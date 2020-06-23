@@ -195,8 +195,8 @@ $("#drop").droppable({
       "src",
       "assets/img/Droplet_Character/After/Character_Mask-03.svg"
     );
-    $("#active_r_1").removeClass("active_1").addClass("active_2");
-    $("#active_r_1_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_1").removeClass("active_2").addClass("active_1");
+    $("#active_r_1_m").removeClass("active_2").addClass("active_1");
     dropped = true;
     var target = document.getElementById("drop");
     target.style.opacity = 0.5;
@@ -246,8 +246,8 @@ $("#drop_1").droppable({
   drop: function (event, ui) {
     $("#drop_1").html('<img src="assets/img/Assets/Apron.svg">');
     $("#drag_1").hide();
-    $("#active_r_2").removeClass("active_1").addClass("active_2");
-    $("#active_r_2_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_2").removeClass("active_2").addClass("active_1");
+    $("#active_r_2_m").removeClass("active_2").addClass("active_1");
     dropped1 = true;
     var target = document.getElementById("drop_1");
     target.style.opacity = 0.5;
@@ -297,8 +297,8 @@ $("#drop_2").droppable({
   drop: function (event, ui) {
     $("#drop_2").html('<img src="assets/img/Assets/Mask_1.svg">');
     $("#drag_2").hide();
-    $("#active_r_3").removeClass("active_1").addClass("active_2");
-    $("#active_r_3_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_3").removeClass("active_2").addClass("active_1");
+    $("#active_r_3_m").removeClass("active_2").addClass("active_1");
     dropped2 = true;
     var target = document.getElementById("drop_2");
     target.style.opacity = 0.5;
@@ -395,8 +395,8 @@ $("#drop_d_2").droppable({
     $("#drag_img_d_2").css("display", "block");
     $("#drop_d_2").hide();
     $("#drag_d_2").hide();
-    $("#active_r_4").removeClass("active_1").addClass("active_2");
-    $("#active_r_4_m").removeClass("active_1").addClass("active_2");
+    $("#active_r_4").removeClass("active_2").addClass("active_1");
+    $("#active_r_4_m").removeClass("active_2").addClass("active_1");
     var target = document.getElementById("drop_d_2");
     document.getElementById("drop_drag_next_con_d_2").style.display = "block";
     document.getElementById("drop_drag_next_nex_d_2").style.display = "block";
