@@ -1411,8 +1411,8 @@ h6 {
   color: #b4b8bc;
 }
 .progressbar li:before {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   content: counter(step);
   counter-increment: step;
   line-height: 30px;
@@ -1420,9 +1420,13 @@ h6 {
   background-color: #a9d0f3;
   border: 2px solid #a9d0f3;
   display: block;
+  font-size: 10px;
   text-align: center;
   margin: 0 auto 10px auto;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .progressbar li:after {
   width: 100%;
