@@ -116,6 +116,8 @@ $("#droppable2").droppable({
       "src",
       "assets/img/Airbone_Character/Before/Character_Long%20Sleeve-03.svg"
     );
+    $("#active_d_2").removeClass("active_2").addClass("active_1");
+    $("#active_d_2_m").removeClass("active_2").addClass("active_1");
     $(".box2").css("height", "210px");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
@@ -127,6 +129,8 @@ $("#droppable3").droppable({
       "src",
       "assets/img/Airbone_Character/Before/Character_ffp2-03.svg"
     );
+    $("#active_d_3").removeClass("active_2").addClass("active_1");
+    $("#active_d_3_m").removeClass("active_2").addClass("active_1");
     $(".box3").css("height", "210px");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
@@ -138,6 +142,8 @@ $("#droppable4").droppable({
       "src",
       "assets/img/Airbone_Character/Before/Character_Face%20shield-03.svg"
     );
+    $("#active_d_4").removeClass("active_2").addClass("active_1");
+    $("#active_d_4_m").removeClass("active_2").addClass("active_1");
     $(".box4").css("height", "210px");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
@@ -150,6 +156,8 @@ $("#droppable5").droppable({
       "src",
       "assets/img/Airbone_Character/Before/Balaji%20Precautions-03.svg"
     );
+    $("#active_d_5").removeClass("active_2").addClass("active_1");
+    $("#active_d_5_m").removeClass("active_2").addClass("active_1");
     $(".box4").css("height", "210px");
     $("#draggable" + slideIndex).hide();
     $(".block1b-text-container" + slideIndex).css("display", "block");
@@ -211,6 +219,8 @@ $("#drop").droppable({
   drop: function (event, ui) {
     $("#drop").html('<img src="assets/img/Assets/Gloves.svg">');
     $("#drag").hide();
+    $("#active_r_1").removeClass("active_1").addClass("active_2");
+    $("#active_r_1_m").removeClass("active_1").addClass("active_2");
     dropped = true;
     var target = document.getElementById("drop");
     target.style.opacity = 0.5;
@@ -258,6 +268,8 @@ $("#drop_1").droppable({
   drop: function (event, ui) {
     $("#drop_1").html('<img src="assets/img/Assets/Gown.svg">');
     $("#drag_1").hide();
+    $("#active_r_2").removeClass("active_1").addClass("active_2");
+    $("#active_r_2_m").removeClass("active_1").addClass("active_2");
     dropped1 = true;
     var target = document.getElementById("drop_1");
     target.style.opacity = 0.5;
@@ -352,6 +364,8 @@ $("#drop_3").droppable({
   drop: function (event, ui) {
     $("#drop_3").html('<img src="assets/img/Assets/Face shield & Mask.svg">');
     $("#drag_3").hide();
+    $("#active_r_4").removeClass("active_1").addClass("active_2");
+    $("#active_r_4_m").removeClass("active_1").addClass("active_2");
     dropped3 = true;
     var target = document.getElementById("drop_3");
     target.style.opacity = 0.5;
@@ -432,6 +446,8 @@ $("#drop_d_1").droppable({
     $("#drop_d_1").hide();
     $("#drag_d_1").hide();
     $(".block1b-text-container").css("display", "block");
+    $("#active_d_1").removeClass("active_2").addClass("active_1");
+    $("#active_d_1_m").removeClass("active_2").addClass("active_1");
   },
 });
 $("#drag_d_2").draggable({
@@ -452,6 +468,8 @@ $("#drop_d_2").droppable({
     $("#drag_img_d_2").css("display", "block");
     $("#drop_d_2").hide();
     $("#drag_d_2").hide();
+    $("#active_r_5").removeClass("active_1").addClass("active_2");
+    $("#active_r_5_m").removeClass("active_1").addClass("active_2");
     var target = document.getElementById("drop_d_2");
     document.getElementById("drop_drag_next_con_d_2").style.display = "block";
     document.getElementById("drop_drag_next_nex_d_2").style.display = "block";
@@ -476,6 +494,8 @@ $("#drop_d_3").droppable({
     $("#drag_img_d_3").css("display", "block");
     $("#drop_d_3").hide();
     $("#drag_d_3").hide();
+    $("#active_r_3").removeClass("active_1").addClass("active_2");
+    $("#active_r_3_m").removeClass("active_1").addClass("active_2");
     var target = document.getElementById("drop_d_3");
     document.getElementById("drop_drag_next_con_d_3").style.display = "block";
     document.getElementById("drop_drag_next_nex_d_3").style.display = "block";
