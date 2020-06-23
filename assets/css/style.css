@@ -1283,6 +1283,13 @@ h6 {
     width: 150px !important;
   }
 
+  .logo_img_d {
+    width: 80%;
+  }
+  .logo_img_d_1 {
+    width: 30%;
+  }
+
   .d_g_bg_ico_2 {
     position: absolute;
     right: 2% !important;
