@@ -163,7 +163,7 @@ $("#drag").draggable({
     document.getElementById("drag_img").style.display = "block";
   },
   stop: function (event) {
-    if(!dropped){
+    if (!dropped) {
       var target = document.getElementById("drag");
       target.style.opacity = 0;
       $("#drag_img").attr(
@@ -171,7 +171,7 @@ $("#drag").draggable({
         "assets/img/Droplet_Character/After/Character_Gloves-03.svg"
       );
     }
-  }
+  },
 });
 $("#drag").draggable({
   cursor: "move",
@@ -179,7 +179,6 @@ $("#drag").draggable({
   helper: function (event) {
     return $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
   },
-  
 });
 $("#drop").droppable({
   drop: function (event, ui) {
@@ -217,7 +216,7 @@ $("#drag_1").draggable({
     document.getElementById("drag_img_1").style.display = "block";
   },
   stop: function (event) {
-    if(!dropped1){
+    if (!dropped1) {
       var target = document.getElementById("drag_1");
       target.style.opacity = 0;
       $("#drag_img_1").attr(
@@ -225,7 +224,7 @@ $("#drag_1").draggable({
         "assets/img/Droplet_Character/After/Character_Mask-03.svg"
       );
     }
-  }
+  },
 });
 $("#drag_1").draggable({
   cursor: "move",
@@ -265,7 +264,7 @@ $("#drag_2").draggable({
     document.getElementById("drag_img_2").style.display = "block";
   },
   stop: function (event) {
-    if(!dropped2){
+    if (!dropped2) {
       var target = document.getElementById("drag_2");
       target.style.opacity = 0;
       $("#drag_img_2").attr(
@@ -273,7 +272,7 @@ $("#drag_2").draggable({
         "assets/img/Droplet_Character/After/Character_Apron%20Dispose-03.svg"
       );
     }
-  }
+  },
 });
 $("#drag_2").draggable({
   cursor: "move",
@@ -307,14 +306,11 @@ $("#drag_3").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
-    $("#drag_img_3").attr(
-      "src",
-      "assets/img/Droplet_Character/After/WM.gif"
-    );
+    $("#drag_img_3").attr("src", "assets/img/Droplet_Character/After/WM.gif");
     document.getElementById("drag_img_3").style.display = "block";
   },
   stop: function (event) {
-    if(!dropped3){
+    if (!dropped3) {
       var target = document.getElementById("drag_3");
       target.style.opacity = 0;
       $("#drag_img_3").attr(
@@ -322,7 +318,7 @@ $("#drag_3").draggable({
         "assets/img/Droplet_Character/After/Character_Normal-03.svg"
       );
     }
-  }
+  },
 });
 $("#drag_3").draggable({
   cursor: "move",

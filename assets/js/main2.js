@@ -171,7 +171,7 @@ $(document).ready(function () {
     divs.eq(now).show(); // show previous
   });
 });
-
+var dropped = false;
 $("#drag").draggable({
   helper: "original",
   revert: "invalid",
@@ -183,7 +183,21 @@ $("#drag").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
+    $("#drag_img").attr(
+      "src",
+      "assets/img/Airbone_Character/After/Character_Face%20shield-03.svg"
+    );
     document.getElementById("drag_img").style.display = "block";
+  },
+  stop: function (event) {
+    if (!dropped) {
+      var target = document.getElementById("drag");
+      target.style.opacity = 0;
+      $("#drag_img").attr(
+        "src",
+        "assets/img/Airbone_Character/After/Balaji%20Precautions-03.svg"
+      );
+    }
   },
 });
 $("#drag").draggable({
@@ -197,13 +211,14 @@ $("#drop").droppable({
   drop: function (event, ui) {
     $("#drop").html('<img src="assets/img/Assets/Gloves.svg">');
     $("#drag").hide();
+    dropped = true;
     var target = document.getElementById("drop");
     target.style.opacity = 0.5;
     document.getElementById("drop_drag_next_nex").style.display = "block";
     document.getElementById("drop_drag_next_con").style.display = "block";
   },
 });
-
+var dropped1 = false;
 $("#drag_1").draggable({
   helper: "original",
   revert: "invalid",
@@ -215,7 +230,21 @@ $("#drag_1").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
+    $("#drag_img_1").attr(
+      "src",
+      "assets/img/Airbone_Character/After/Character_F%20M-03.svg"
+    );
     document.getElementById("drag_img_1").style.display = "block";
+  },
+  stop: function (event) {
+    if (!dropped1) {
+      var target = document.getElementById("drag_1");
+      target.style.opacity = 0;
+      $("#drag_img_1").attr(
+        "src",
+        "assets/img/Airbone_Character/After/Character_Face%20shield-03.svg"
+      );
+    }
   },
 });
 $("#drag_1").draggable({
@@ -229,13 +258,14 @@ $("#drop_1").droppable({
   drop: function (event, ui) {
     $("#drop_1").html('<img src="assets/img/Assets/Gown.svg">');
     $("#drag_1").hide();
+    dropped1 = true;
     var target = document.getElementById("drop_1");
     target.style.opacity = 0.5;
     document.getElementById("drop_drag_next_nex_1").style.display = "block";
     document.getElementById("drop_drag_next_con_1").style.display = "block";
   },
 });
-
+var dropped2 = false;
 $("#drag_2").draggable({
   helper: "original",
   revert: "invalid",
@@ -247,7 +277,21 @@ $("#drag_2").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
+    $("#drag_img_2").attr(
+      "src",
+      "assets/img/Droplet_Character/After/Character_Mask-03.svg"
+    );
     document.getElementById("drag_img_2").style.display = "block";
+  },
+  stop: function (event) {
+    if (!dropped2) {
+      var target = document.getElementById("drag_2");
+      target.style.opacity = 0;
+      $("#drag_img_2").attr(
+        "src",
+        "assets/img/Droplet_Character/After/Character_Mask-03.svg"
+      );
+    }
   },
 });
 $("#drag_2").draggable({
@@ -261,13 +305,14 @@ $("#drop_2").droppable({
   drop: function (event, ui) {
     $("#drop_2").html('<img src="assets/img/Assets/Sanitizer.svg">');
     $("#drag_2").hide();
+    dropped2 = true;
     var target = document.getElementById("drop_2");
     target.style.opacity = 0.5;
     document.getElementById("drop_drag_next_nex_2").style.display = "block";
     document.getElementById("drop_drag_next_con_2").style.display = "block";
   },
 });
-
+var dropped3 = false;
 $("#drag_3").draggable({
   helper: "original",
   revert: "invalid",
@@ -279,7 +324,21 @@ $("#drag_3").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
+    $("#drag_img_3").attr(
+      "src",
+      "assets/img/Airbone_Character/After/Character_Normal-03.svg"
+    );
     document.getElementById("drag_img_3").style.display = "block";
+  },
+  stop: function (event) {
+    if (!dropped3) {
+      var target = document.getElementById("drag_3");
+      target.style.opacity = 0;
+      $("#drag_img_3").attr(
+        "src",
+        "assets/img/Airbone_Character/After/Character_F%20M-03.svg"
+      );
+    }
   },
 });
 $("#drag_3").draggable({
@@ -293,13 +352,14 @@ $("#drop_3").droppable({
   drop: function (event, ui) {
     $("#drop_3").html('<img src="assets/img/Assets/Face shield & Mask.svg">');
     $("#drag_3").hide();
+    dropped3 = true;
     var target = document.getElementById("drop_3");
     target.style.opacity = 0.5;
     document.getElementById("drop_drag_next_nex_3").style.display = "block";
     document.getElementById("drop_drag_next_con_3").style.display = "block";
   },
 });
-
+var dropped4 = false;
 $("#drag_4").draggable({
   helper: "original",
   revert: "invalid",
@@ -311,7 +371,21 @@ $("#drag_4").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
+    $("#drag_img_4").attr(
+      "src",
+      "assets/img/Airbone_Character/After/Character_Normal-03.svg"
+    );
     document.getElementById("drag_img_4").style.display = "block";
+  },
+  stop: function (event) {
+    if (!dropped4) {
+      var target = document.getElementById("drag_4");
+      target.style.opacity = 0;
+      $("#drag_img_4").attr(
+        "src",
+        "assets/img/Airbone_Character/After/Character_Normal-03.svg"
+      );
+    }
   },
 });
 $("#drag_4").draggable({
@@ -325,6 +399,7 @@ $("#drop_4").droppable({
   drop: function (event, ui) {
     $("#drop_4").html('<img src="assets/img/Assets/Sanitizer.svg">');
     $("#drag_4").hide();
+    dropped4 = true;
     var target = document.getElementById("drop_4");
     target.style.opacity = 0.5;
     document.getElementById("drop_drag_next_nex_4").style.display = "block";
