@@ -740,7 +740,7 @@ h6 {
   }
 
   .block1 h3 {
-    color: #fff;
+    color: #212529;
     padding: 1%;
     background-color: #f6d23c !important;
   }
@@ -1141,7 +1141,7 @@ h6 {
     max-height: 125px;
   }
   .block1 h3 {
-    color: #fff;
+    color: #212529;
     padding: 1.5%;
     text-align: center;
     background-color: #f6d23c;
@@ -1234,7 +1234,7 @@ h6 {
     left: 8%;
     top: 10%;
     opacity: 0.8;
-    width: 120px;
+    width: 150px;
   }
 
   .d_g_bg_ico_2 {
@@ -1243,7 +1243,7 @@ h6 {
     opacity: 0.8;
     bottom: 10%;
     left: 10%;
-    width: 80px;
+    width: 100px;
   }
 
   .apron-image-container {
@@ -1264,7 +1264,7 @@ h6 {
     right: 15%;
     bottom: 5%;
     opacity: 0.8;
-    width: 50px;
+    width: 70px;
   }
 
   .d_g_bg_ico_4 {
@@ -1272,7 +1272,7 @@ h6 {
     right: 0%;
     top: 20%;
     opacity: 0.8;
-    width: 100px;
+    width: 120px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1470,7 +1470,7 @@ h6 {
 .progressbar li.active_1:before {
   border-color: #f6d23c !important;
   content: "\f00c";
-  color: #fff;
+  color: #212529;
   background-color: #f6d23c;
   font-family: FontAwesome;
 }
