@@ -741,7 +741,8 @@ h6 {
 
   .block1 h3 {
     color: #fff;
-    background-color: #f6d23c;
+    padding: 1%;
+    background-color: #f6d23c !important;
   }
 
   .block1b-image-container {
