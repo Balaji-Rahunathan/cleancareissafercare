@@ -297,8 +297,8 @@ $("#drop_2").droppable({
   drop: function (event, ui) {
     $("#drop_2").html('<img src="assets/img/Assets/Mask_1.svg">');
     $("#drag_2").hide();
-    $("#active_r_3").removeClass("active_2").addClass("active_1");
-    $("#active_r_3_m").removeClass("active_2").addClass("active_1");
+    $("#active_r_31").removeClass("active_2").addClass("active_1");
+    $("#active_r_31_m").removeClass("active_2").addClass("active_1");
     dropped2 = true;
     var target = document.getElementById("drop_2");
     target.style.opacity = 0.5;
@@ -403,8 +403,98 @@ $("#drop_d_2").droppable({
   },
 });
 
+$("#drag_d_3").draggable({
+  helper: "original",
+  revert: "invalid",
+  drag: function (event, ui) {
+    var target = document.getElementById("drag_d_3");
+
+    target.style.top = 0;
+    target.style.left = 0;
+    target.style.right = 0;
+    target.style.bottom = 0;
+    target.style.opacity = 1;
+  },
+});
+$("#drop_d_3").droppable({
+  drop: function (event, ui) {
+    $("#drag_img_d_3").css("display", "block");
+    $("#drop_d_3").hide();
+    $("#drag_d_3").hide();
+    $("#active_r_3").removeClass("active_2").addClass("active_1");
+    $("#active_r_3_m").removeClass("active_2").addClass("active_1");
+    var target = document.getElementById("drop_d_3");
+    document.getElementById("drop_drag_next_con_d_3").style.display = "block";
+    document.getElementById("drop_drag_next_nex_d_3").style.display = "block";
+  },
+});
+
 if ($(window).width() > 600) {
   $(".rwl_1").addClass("rwl");
 } else {
   $(".rwl_1").removeClass("rwl");
 }
+
+function touchHandler(event) {
+  var touch = event.changedTouches[0];
+
+  var simulatedEvent = document.createEvent("MouseEvent");
+  simulatedEvent.initMouseEvent(
+    {
+      touchstart: "mousedown",
+      touchmove: "mousemove",
+      touchend: "mouseup",
+    }[event.type],
+    true,
+    true,
+    window,
+    1,
+    touch.screenX,
+    touch.screenY,
+    touch.clientX,
+    touch.clientY,
+    false,
+    false,
+    false,
+    false,
+    0,
+    null
+  );
+
+  touch.target.dispatchEvent(simulatedEvent);
+  event.preventDefault();
+}
+
+var lastTouchY = 0;
+var preventPullToRefresh = false;
+
+window.addEventListener("load", function () {
+  var maybePreventPullToRefresh = false;
+  var lastTouchY = 0;
+  var touchstartHandler = function (e) {
+    if (e.touches.length != 1) return;
+    lastTouchY = e.touches[0].clientY;
+    // Pull-to-refresh will only trigger if the scroll begins when the
+    // document's Y offset is zero.
+    maybePreventPullToRefresh = window.pageYOffset == 0;
+  };
+
+  var touchmoveHandler = function (e) {
+    var touchY = e.touches[0].clientY;
+    var touchYDelta = touchY - lastTouchY;
+    lastTouchY = touchY;
+
+    if (maybePreventPullToRefresh) {
+      // To suppress pull-to-refresh it is sufficient to preventDefault the
+      // first overscrolling touchmove.
+      maybePreventPullToRefresh = false;
+      if (touchYDelta > 0) {
+        e.preventDefault();
+        return;
+      }
+    }
+  };
+
+  document.addEventListener("touchstart", touchstartHandler, false);
+  document.addEventListener("touchmove", touchmoveHandler, false);
+});

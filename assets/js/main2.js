@@ -338,7 +338,7 @@ $("#drag_3").draggable({
     target.style.opacity = 1;
     $("#drag_img_3").attr(
       "src",
-      "assets/img/Airbone_Character/After/Character_Normal-03.svg"
+      "assets/img/Airbone_Character/After/Balaji Precautions [Recovered]-31.svg"
     );
     document.getElementById("drag_img_3").style.display = "block";
   },
@@ -348,7 +348,7 @@ $("#drag_3").draggable({
       target.style.opacity = 0;
       $("#drag_img_3").attr(
         "src",
-        "assets/img/Airbone_Character/After/Character_F%20M-03.svg"
+        "assets/img/Airbone_Character/After/Character_F M-03.svg"
       );
     }
   },
@@ -357,12 +357,12 @@ $("#drag_3").draggable({
   cursor: "move",
   cursorAt: { width: "50%", height: "50%" },
   helper: function (event) {
-    return $("#drag_3").attr("src", "assets/img/Assets/Face shield & Mask.svg");
+    return $("#drag_3").attr("src", "assets/img/Assets/Face shield.svg");
   },
 });
 $("#drop_3").droppable({
   drop: function (event, ui) {
-    $("#drop_3").html('<img src="assets/img/Assets/Face shield & Mask.svg">');
+    $("#drop_3").html('<img src="assets/img/Assets/Face shield.svg">');
     $("#drag_3").hide();
     $("#active_r_4").removeClass("active_2").addClass("active_1");
     $("#active_r_4_m").removeClass("active_2").addClass("active_1");
@@ -397,7 +397,7 @@ $("#drag_4").draggable({
       target.style.opacity = 0;
       $("#drag_img_4").attr(
         "src",
-        "assets/img/Airbone_Character/After/Character_Normal-03.svg"
+        "assets/img/Airbone_Character/After/Balaji Precautions [Recovered]-31.svg"
       );
     }
   },
@@ -406,13 +406,15 @@ $("#drag_4").draggable({
   cursor: "move",
   cursorAt: { width: "50%", height: "50%" },
   helper: function (event) {
-    return $("#drag_4").attr("src", "assets/img/Assets/Sanitizer.svg");
+    return $("#drag_4").attr("src", "assets/img/Assets/FFP2.svg");
   },
 });
 $("#drop_4").droppable({
   drop: function (event, ui) {
-    $("#drop_4").html('<img src="assets/img/Assets/Sanitizer.svg">');
+    $("#drop_4").html('<img src="assets/img/Assets/FFP2.svg">');
     $("#drag_4").hide();
+    $("#active_r_6").removeClass("active_2").addClass("active_1");
+    $("#active_r_6_m").removeClass("active_2").addClass("active_1");
     dropped4 = true;
     var target = document.getElementById("drop_4");
     target.style.opacity = 0.5;
@@ -500,4 +502,68 @@ $("#drop_d_3").droppable({
     document.getElementById("drop_drag_next_con_d_3").style.display = "block";
     document.getElementById("drop_drag_next_nex_d_3").style.display = "block";
   },
+});
+
+function touchHandler(event) {
+  var touch = event.changedTouches[0];
+
+  var simulatedEvent = document.createEvent("MouseEvent");
+  simulatedEvent.initMouseEvent(
+    {
+      touchstart: "mousedown",
+      touchmove: "mousemove",
+      touchend: "mouseup",
+    }[event.type],
+    true,
+    true,
+    window,
+    1,
+    touch.screenX,
+    touch.screenY,
+    touch.clientX,
+    touch.clientY,
+    false,
+    false,
+    false,
+    false,
+    0,
+    null
+  );
+
+  touch.target.dispatchEvent(simulatedEvent);
+  event.preventDefault();
+}
+
+var lastTouchY = 0;
+var preventPullToRefresh = false;
+
+window.addEventListener("load", function () {
+  var maybePreventPullToRefresh = false;
+  var lastTouchY = 0;
+  var touchstartHandler = function (e) {
+    if (e.touches.length != 1) return;
+    lastTouchY = e.touches[0].clientY;
+    // Pull-to-refresh will only trigger if the scroll begins when the
+    // document's Y offset is zero.
+    maybePreventPullToRefresh = window.pageYOffset == 0;
+  };
+
+  var touchmoveHandler = function (e) {
+    var touchY = e.touches[0].clientY;
+    var touchYDelta = touchY - lastTouchY;
+    lastTouchY = touchY;
+
+    if (maybePreventPullToRefresh) {
+      // To suppress pull-to-refresh it is sufficient to preventDefault the
+      // first overscrolling touchmove.
+      maybePreventPullToRefresh = false;
+      if (touchYDelta > 0) {
+        e.preventDefault();
+        return;
+      }
+    }
+  };
+
+  document.addEventListener("touchstart", touchstartHandler, false);
+  document.addEventListener("touchmove", touchmoveHandler, false);
 });
