@@ -621,7 +621,7 @@ h6 {
     width: 100%;
     height: 80px !important;
     max-width: 80px !important ;
-    border: 2px dashed #2ea74f !important;
+    border: 2px dashed #f6d23c !important;
     border-radius: 10px !important;
     display: flex;
     justify-content: center;
@@ -731,12 +731,17 @@ h6 {
   .box2,
   .box3,
   .block1 h3 {
-    color: #187dd7;
+    color: #f6d23c;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 10px !important;
+  }
+
+  .block1 h3 {
+    color: #fff;
+    background-color: #f6d23c;
   }
 
   .block1b-image-container {
@@ -1135,8 +1140,10 @@ h6 {
     max-height: 125px;
   }
   .block1 h3 {
-    color: #187dd7;
+    color: #fff;
+    padding: 1.5%;
     text-align: center;
+    background-color: #f6d23c;
     font-size: 32px;
     font-weight: 600;
   }
@@ -1244,7 +1251,7 @@ h6 {
     width: 100%;
     height: 200px !important;
     max-width: 200px !important;
-    border: 2px dashed #2ea74f !important;
+    border: 2px dashed #f6d23c !important;
     border-radius: 15px !important;
     display: flex;
     justify-content: center;
@@ -1460,14 +1467,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_1:before {
-  border-color: #30a851 !important;
+  border-color: #f6d23c !important;
   content: "\f00c";
   color: #fff;
-  background-color: #30a851;
+  background-color: #f6d23c;
   font-family: FontAwesome;
 }
 .progressbar li.active_1 + li:after {
-  background-color: #30a851;
+  background-color: #f6d23c;
 }
 .progressbar li.active_2 {
   color: #4197e5;
@@ -1482,14 +1489,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_3:before {
-  border-color: #30a851 !important;
+  border-color: #f6d23c !important;
   content: "\f00c";
   color: #fff;
-  background-color: #30a851;
+  background-color: #f6d23c;
   font-family: FontAwesome;
 }
 .progressbar li.active_3 + li:after {
-  background-color: #30a851;
+  background-color: #f6d23c;
 }
 
 .red_d {

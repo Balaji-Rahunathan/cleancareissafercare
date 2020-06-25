@@ -727,12 +727,15 @@ h6 {
   .box2,
   .box3,
   .block1 h3 {
-    color: #187dd7;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 10px !important;
+  }
+  .block1 h3 {
+    color: #fff;
+    background-color: #34a853;
   }
 
   .block1b-image-container {
@@ -1131,9 +1134,11 @@ h6 {
     max-height: 125px;
   }
   .block1 h3 {
-    color: #187dd7;
+    color: #fff;
     text-align: center;
     font-size: 32px;
+    padding: 1.5%;
+    background-color: #34a853;
     font-weight: 600;
   }
   .P_text_aling_1 {
@@ -1456,14 +1461,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_1:before {
-  border-color: #30a851 !important;
+  border-color: #34a853 !important;
   content: "\f00c";
   color: #fff;
-  background-color: #30a851;
+  background-color: #34a853;
   font-family: FontAwesome;
 }
 .progressbar li.active_1 + li:after {
-  background-color: #30a851;
+  background-color: #34a853;
 }
 .progressbar li.active_2 {
   color: #4197e5;
@@ -1478,14 +1483,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_3:before {
-  border-color: #30a851 !important;
+  border-color: #34a853 !important;
   content: "\f00c";
   color: #fff;
-  background-color: #30a851;
+  background-color: #34a853;
   font-family: FontAwesome;
 }
 .progressbar li.active_3 + li:after {
-  background-color: #30a851;
+  background-color: #34a853;
 }
 
 .red_d {
@@ -1493,5 +1498,5 @@ h6 {
 }
 
 .bg-light {
-    background-color: #ffff!important;
+  background-color: #ffff !important;
 }
