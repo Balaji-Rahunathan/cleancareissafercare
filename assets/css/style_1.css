@@ -1228,7 +1228,7 @@ h6 {
     left: 8%;
     top: 10%;
     opacity: 0.8;
-    width: 120px;
+    width: 150px;
   }
 
   .d_g_bg_ico_2 {
@@ -1237,7 +1237,7 @@ h6 {
     opacity: 0.8;
     bottom: 10%;
     left: 10%;
-    width: 80px;
+    width: 100px;
   }
 
   .apron-image-container {
@@ -1258,7 +1258,7 @@ h6 {
     right: 15%;
     bottom: 5%;
     opacity: 0.8;
-    width: 50px;
+    width: 70px;
   }
 
   .d_g_bg_ico_4 {
@@ -1266,7 +1266,7 @@ h6 {
     right: 0%;
     top: 20%;
     opacity: 0.8;
-    width: 100px;
+    width: 120px;
   }
 }
 @media only screen and (max-width: 600px) {
