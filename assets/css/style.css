@@ -310,7 +310,7 @@ h6 {
   border: 0;
 }
 .box_btn_1:hover {
-  background-color: #34a853;
+  background-color: #34a853 !important;
   color: #fff;
 }
 .box_ico {
@@ -356,7 +356,7 @@ h6 {
 }
 
 .box_btn_2:hover {
-  background-color: #f6d23c;
+  background-color: #f6d23c !important;
   color: #fff;
 }
 .box_pad_2 {
