@@ -1491,3 +1491,7 @@ h6 {
 .red_d {
   color: #212529 !important;
 }
+
+.bg-light {
+    background-color: #ffff!important;
+}
