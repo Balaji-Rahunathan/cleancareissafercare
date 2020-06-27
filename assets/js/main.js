@@ -151,7 +151,7 @@ $("#droppable5").droppable({
   drop: function (ui, event) {
     $(".block1b-image").attr(
       "src",
-      "assets/img/Droplet_Character/before/Balaji Precautions [Recovered]-28.svg"
+      "assets/img/Droplet_Character/After/BalajiPrecautions28.svg"
     );
     $("#active_d_5").removeClass("active_2").addClass("active_1");
     $("#active_d_5_m").removeClass("active_2").addClass("active_1");
@@ -200,7 +200,7 @@ $("#drag").draggable({
       target.style.opacity = 0;
       $("#drag_img").attr(
         "src",
-        "assets/img/Droplet_Character/After/Character_Gloves-03.svg"
+        "assets/img/Droplet_Character/After/BalajiPrecautions28.svg"
       );
     }
   },
