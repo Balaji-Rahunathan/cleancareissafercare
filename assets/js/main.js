@@ -138,7 +138,7 @@ $("#droppable4").droppable({
   drop: function (ui, event) {
     $(".block1b-image").attr(
       "src",
-      "assets/img/Droplet_Character/before/Character_Normal-03.svg"
+      "assets/img/Droplet_Character/Before/Character_Apron-03.svg"
     );
     $("#active_d_4").removeClass("active_2").addClass("active_1");
     $("#active_d_4_m").removeClass("active_2").addClass("active_1");
