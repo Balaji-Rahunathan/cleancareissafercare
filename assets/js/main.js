@@ -138,7 +138,7 @@ $("#droppable4").droppable({
   drop: function (ui, event) {
     $(".block1b-image").attr(
       "src",
-      "assets/img/Droplet_Character/Before/vishwa-04.svg"
+      "assets/img/Droplet_Character/Before/maskover.svg"
     );
     $("#active_d_4").removeClass("active_2").addClass("active_1");
     $("#active_d_4_m").removeClass("active_2").addClass("active_1");
@@ -190,7 +190,7 @@ $("#drag").draggable({
     target.style.opacity = 1;
     $("#drag_img").attr(
       "src",
-      "assets/img/Droplet_Character/before/vishwa-04.svg"
+      "assets/img/Droplet_Character/Before/maskover.svg"
     );
     document.getElementById("drag_img").style.display = "block";
   },
@@ -218,7 +218,7 @@ $("#drop").droppable({
     $("#drag").hide();
     $("#drag_img").attr(
       "src",
-      "assets/img/Droplet_Character/before/vishwa-04.svg"
+      "assets/img/Droplet_Character/Before/maskover.svg"
     );
     $("#active_r_1").removeClass("active_2").addClass("active_1");
     $("#active_r_1_m").removeClass("active_2").addClass("active_1");
