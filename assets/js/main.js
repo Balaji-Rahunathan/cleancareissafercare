@@ -245,7 +245,7 @@ $("#drag_1").draggable({
     target.style.opacity = 1;
     $("#drag_img_1").attr(
       "src",
-      "assets/img/Droplet_Character/After/Character_Apron%20Dispose-03.svg"
+      "assets/img/Droplet_Character/Before/maskslide.svg"
     );
     document.getElementById("drag_img_1").style.display = "block";
   },
