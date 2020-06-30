@@ -216,10 +216,6 @@ $("#drop").droppable({
   drop: function (event, ui) {
     $("#drop").html('<img src="assets/img/Assets/Gloves.svg">');
     $("#drag").hide();
-    $("#drag_img").attr(
-      "src",
-      "assets/img/Droplet_Character/Before/maskover.svg"
-    );
     $("#active_r_1").removeClass("active_2").addClass("active_1");
     $("#active_r_1_m").removeClass("active_2").addClass("active_1");
     dropped = true;
