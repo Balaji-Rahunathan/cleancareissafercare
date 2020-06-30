@@ -208,8 +208,7 @@ $("#drag").draggable({
 
 $("#drag").draggable({
   appendTo: "body",
-  containment: "window",
-  scroll: false,
+
   helper: "clone",
   cursor: "move",
   tolerance: "fit",
@@ -269,8 +268,7 @@ $("#drag_1").draggable({
 });
 $("#drag_1").draggable({
   appendTo: "body",
-  containment: "window",
-  scroll: false,
+
   helper: "clone",
   cursor: "move",
   tolerance: "fit",
@@ -329,8 +327,7 @@ $("#drag_2").draggable({
 });
 $("#drag_2").draggable({
   appendTo: "body",
-  containment: "window",
-  scroll: false,
+
   helper: "clone",
   cursor: "move",
   tolerance: "fit",
@@ -390,8 +387,7 @@ $("#drag_3").draggable({
 });
 $("#drag_3").draggable({
   appendTo: "body",
-  containment: "window",
-  scroll: false,
+
   helper: "clone",
   cursor: "move",
   tolerance: "fit",
