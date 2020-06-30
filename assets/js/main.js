@@ -205,10 +205,20 @@ $("#drag").draggable({
     }
   },
 });
+
 $("#drag").draggable({
   appendTo: "body",
   containment: "window",
   scroll: false,
+  helper: "clone",
+  cursor: "move",
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
   },
@@ -258,6 +268,18 @@ $("#drag_1").draggable({
   },
 });
 $("#drag_1").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
+  helper: "clone",
+  cursor: "move",
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag_1").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag_1").html('<img src="assets/img/Assets/Gloves.svg">');
   },
@@ -306,6 +328,18 @@ $("#drag_2").draggable({
   },
 });
 $("#drag_2").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
+  helper: "clone",
+  cursor: "move",
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag_2").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag_2").attr("src", "assets/img/Assets/Mask_1.svg");
   },
@@ -355,6 +389,18 @@ $("#drag_3").draggable({
   },
 });
 $("#drag_3").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
+  helper: "clone",
+  cursor: "move",
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag_3").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag_3").attr("src", "assets/img/Assets/Face shield.svg");
   },

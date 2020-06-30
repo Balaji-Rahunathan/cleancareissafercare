@@ -209,8 +209,18 @@ $("#drag").draggable({
   },
 });
 $("#drag").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
+  helper: "clone",
   cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
   },
@@ -258,8 +268,18 @@ $("#drag_1").draggable({
   },
 });
 $("#drag_1").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
+  helper: "clone",
   cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag_1").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag_1").attr("src", "assets/img/Assets/Gown.svg");
   },
@@ -307,8 +327,19 @@ $("#drag_2").draggable({
   },
 });
 $("#drag_2").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
+  helper: "clone",
   cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag_2").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
+  //cursorAt: { width: "50%", height: "50%" },//
   helper: function (event) {
     return $("#drag_2").attr("src", "assets/img/Assets/Sanitizer.svg");
   },
@@ -354,8 +385,18 @@ $("#drag_3").draggable({
   },
 });
 $("#drag_3").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
+  helper: "clone",
   cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag_3").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag_3").attr("src", "assets/img/Assets/Face shield.svg");
   },
@@ -403,8 +444,18 @@ $("#drag_4").draggable({
   },
 });
 $("#drag_4").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
+  helper: "clone",
   cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag_4").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag_4").attr("src", "assets/img/Assets/FFP2.svg");
   },
