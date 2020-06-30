@@ -206,8 +206,6 @@ $("#drag").draggable({
   },
 });
 $("#drag").draggable({
-  cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
   helper: function (event) {
     return $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
   },
@@ -251,14 +249,12 @@ $("#drag_1").draggable({
       target.style.opacity = 0;
       $("#drag_img_1").attr(
         "src",
-        "assets/img/Droplet_Character/After/Character_Mask-03.svg"
+        "assets/img/Droplet_Character/Before/maskover.svg"
       );
     }
   },
 });
 $("#drag_1").draggable({
-  cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
   helper: function (event) {
     return $("#drag_1").html('<img src="assets/img/Assets/Gloves.svg">');
   },
@@ -307,8 +303,6 @@ $("#drag_2").draggable({
   },
 });
 $("#drag_2").draggable({
-  cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
   helper: function (event) {
     return $("#drag_2").attr("src", "assets/img/Assets/Mask_1.svg");
   },
@@ -352,14 +346,12 @@ $("#drag_3").draggable({
       target.style.opacity = 0;
       $("#drag_img_3").attr(
         "src",
-        "assets/img/Droplet_Character/After/Character_Apron%20Dispose-03.svg"
+        "assets/img/Droplet_Character/Before/maskslide.svg"
       );
     }
   },
 });
 $("#drag_3").draggable({
-  cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
   helper: function (event) {
     return $("#drag_3").attr("src", "assets/img/Assets/Face shield.svg");
   },
