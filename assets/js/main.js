@@ -206,6 +206,9 @@ $("#drag").draggable({
   },
 });
 $("#drag").draggable({
+  appendTo: "body",
+  containment: "window",
+  scroll: false,
   helper: function (event) {
     return $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
   },
