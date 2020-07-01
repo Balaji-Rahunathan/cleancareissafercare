@@ -21,8 +21,18 @@
     />
 
     <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      canvas {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -100;
+      }
+    </style>
   </head>
   <body class="">
+    <canvas id="canvas"></canvas>
     <div class="">
       <section class="container-block1">
         <div class="container">
@@ -1118,19 +1128,19 @@
                           </div>
                         </div>
                         <div class="button-container">
-                          <a
-                            href="index.html"
+                          <button
                             name="next"
+                            onclick="loop()"
                             id="drop_drag_next_nex_d_2"
                             class="block1b-button mx-1"
                             style="display: none;"
                           >
-                            Home
+                            Continue
                             <i
                               class="fa fa-angle-double-right"
                               aria-hidden="true"
                             ></i>
-                          </a>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -1147,6 +1157,31 @@
                     <li class="active_1">FFP2 mask</li>
                     <li id="active_r_5" class="active_2">Sanitizer</li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d_d_div">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 block1">
+                  <img class="drop-img" src="assets/img/Icon_Airbone.svg" />
+
+                  <h3 class="my-3">Airbone and Contact Precautions</h3>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <img class="suc_img" src="assets/img/Assets/done.svg" />
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <h1 class="suc_head">
+                    Well done!!! Training Completed<span class="suc_color">
+                      Successfully</span
+                    >
+                  </h1>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-3">
+                  <a href="index.html" class="suc_btn btn btn-lg">Home </a>
                 </div>
               </div>
             </div>
