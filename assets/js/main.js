@@ -462,6 +462,7 @@ $("#drop_d_2").droppable({
     var target = document.getElementById("drop_d_2");
     document.getElementById("drop_drag_next_con_d_2").style.display = "block";
     document.getElementById("drop_drag_next_nex_d_2").style.display = "block";
+    document.getElementById("drop_drag_next_nex_d_4").style.display = "block";
   },
 });
 

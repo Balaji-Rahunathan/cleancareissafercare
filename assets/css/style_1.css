@@ -1405,6 +1405,20 @@ h6 {
     font-weight: 600 !important;
     color: #ff0000;
   }
+  .button-container_1 {
+    display: inline-block !important;
+    flex-direction: row;
+    width: 130px !important;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: -220%;
+    left: 33%;
+    margin-bottom: 5%;
+  }
+  .mar_top {
+    margin-top: 10px !important;
+  }
 }
 .s_pro {
   display: block;
@@ -1522,4 +1536,16 @@ p {
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+.button-container_1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 300px;
+}
+.button-container_1 a {
+  color: #fff;
+}
+.mar_top {
+  margin-top: 0%;
 }
