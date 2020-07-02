@@ -1408,14 +1408,32 @@ h6 {
   .button-container_1 {
     display: inline-block !important;
     flex-direction: row;
-    width: 130px !important;
+    width: 230px !important;
     text-align: center;
     margin: auto;
     position: absolute;
-    bottom: -220%;
-    left: 33%;
+    bottom: -180%;
+
     margin-bottom: 5%;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  .block1b-button_1 {
+    position: relative;
+    border-radius: 5px;
+    padding: 5px 5px;
+    background-color: #187dd7;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #187dd7;
+    width: 230px !important;
+  }
+
   .mar_top {
     margin-top: 10px !important;
   }
@@ -1548,4 +1566,18 @@ p {
 }
 .mar_top {
   margin-top: 0%;
+}
+.block1b-button_1 {
+  border-radius: 5px;
+  padding: 5px 5px;
+  background-color: #187dd7;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #187dd7;
+  width: 100%;
+}
+
+.block1b-button_1:hover {
+  color: #fff;
 }
