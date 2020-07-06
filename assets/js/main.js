@@ -187,7 +187,7 @@ $("#drag").draggable({
       $("#drag").css("width", "50%");
     }
     var target = document.getElementById("drag");
-    target.style.width = "50%";
+
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
