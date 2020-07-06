@@ -181,6 +181,11 @@ $("#drag").draggable({
   helper: "original",
   revert: "invalid",
   drag: function (event, ui) {
+    if ($(window).width() < 900) {
+      $("#drag").css("width", "30%");
+    } else {
+      $("#drag").css("width", "50%");
+    }
     var target = document.getElementById("drag");
     target.style.width = "50%";
     target.style.top = 0;
