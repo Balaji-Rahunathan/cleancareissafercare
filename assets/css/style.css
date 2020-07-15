@@ -1406,6 +1406,9 @@ h6 {
   .progressbar li:before {
     margin: 0 auto 5px auto !important;
   }
+  .suc_img {
+    width: 300px !important;
+  }
 
   .P_text_aling_21 {
     font-size: 14px !important;
